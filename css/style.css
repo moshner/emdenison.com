@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .body-copy {
   max-width: 50em;
+  margin: 0 auto;
 }
 
 .has-dropcap:first-letter {
