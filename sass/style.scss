@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 	.fh5co-intro-img {
 		position: relative;
-		bottom: -10em;
+		bottom: -5em;
 		@media screen and (max-width: $screen-sm) {
 			bottom: -2em;
 		}
@@ -522,6 +522,9 @@ h1, h2, h3, h4, h5, h6, figure {
 		> .fh5co-copy-inner {
 			display: table-cell;
 			vertical-align: middle;
+			@media screen and (max-width: $screen-md) {
+				display: block;
+			}
 			h2 {
 				position: relative;
 				padding-bottom: 20px;
@@ -562,7 +565,7 @@ h1, h2, h3, h4, h5, h6, figure {
 				max-width: 380px;
 			}
 			@media screen and (max-width: $screen-sm) {
-				max-width: 100%;
+				max-width: 400px;
 			}
 		}
 		&-attribution {
