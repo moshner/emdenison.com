@@ -176,11 +176,14 @@ h1, h2, h3, h4, h5, h6, figure {
 	a {
 		color: $brand-white;
 		padding: 10px 40px;
-		font-size: 78px;
+		font-size: 118px;
 		letter-spacing: 4px;
 		// border: 2px solid rgba(255,255,255,1);
 		&:hover, &:active, &:focus {
 			text-decoration: none;
+		}
+		@media screen and (max-width: $screen-lg) {
+			font-size: 98px;
 		}
 		@media screen and (max-width: $screen-md) {
 			padding: 0;
@@ -199,7 +202,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	background-position: top center;
 	color: $brand-white;
 	position: relative;
-	margin-bottom: 26em;
+	margin-bottom: 20em;
 	@media screen and (max-width:$screen-xs ) {
 		margin-bottom: 14em;
 	}
@@ -235,7 +238,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		text-align: left;
 	}
 	.intro {
-		margin-top: 18em;
+		margin-top: 12em;
 		@media screen and (max-width: $screen-sm) {
 			margin-top: 7em;
 		}
