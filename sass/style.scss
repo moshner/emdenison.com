@@ -593,8 +593,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 #footer {
-	padding: 2em 0;
-	background: lighten($brand-primary, 15%);
+	padding: 2em 0 1em;
+	background: lighten($brand-primary, 25%);
 	color: lighten($brand-black, 10%);
 	a {
 		color: $brand-secondary;

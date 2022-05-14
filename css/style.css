@@ -585,8 +585,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #footer {
-  padding: 2em 0;
-  background: #9bbebb;
+  padding: 2em 0 1em;
+  background: #bad2d0;
   color: #1a1a1a;
 }
 
