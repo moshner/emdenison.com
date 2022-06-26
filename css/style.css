@@ -85,6 +85,42 @@ h1, h2, h3, h4, h5, h6, figure {
   float: left;
 }
 
+nav {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+nav ul {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1em;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li::after {
+  content: " | ";
+  display: inline;
+  padding: 0 .5em;
+  color: #bebcbc;
+}
+
+nav li:last-child::after {
+  content: '';
+}
+
+nav a {
+  color: #bebcbc;
+  position: relative;
+}
+
 #fh5co-logo {
   text-transform: uppercase;
   color: #fff;

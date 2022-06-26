@@ -175,6 +175,36 @@ h1, h2, h3, h4, h5, h6, figure {
 	  float: left;
   }
 
+nav {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 2;
+	ul {
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 1em;
+		padding-inline-start: 0;
+		text-align: center;
+	}
+	li {
+		display: inline-block;
+		&::after {
+			content: " | ";
+			display: inline;
+			padding: 0 .5em;
+			color: rgb(190, 188, 188);
+		}
+		&:last-child::after {
+			content: '';
+		}
+	}
+	a {
+		color: rgb(190, 188, 188);
+		position: relative;
+	}
+}
+
 #fh5co-logo {
 	text-transform: uppercase;
 	color: $brand-white;
