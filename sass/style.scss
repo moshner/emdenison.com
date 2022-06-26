@@ -171,6 +171,9 @@ h1, h2, h3, h4, h5, h6, figure {
 	margin: 0.1em 0.1em 0.2em 0;
   }
   
+  .float-left {
+	  float: left;
+  }
 
 #fh5co-logo {
 	text-transform: uppercase;
@@ -509,8 +512,6 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 }
 .fh5co-feature	{
-	height: 600px;
-	// overflow: hidden;
 	margin-bottom: 10em;
 	padding-top: 4em;
 	&.last-feature {
@@ -520,7 +521,6 @@ h1, h2, h3, h4, h5, h6, figure {
 		height: inherit!important;
 	}
 	.fh5co-copy {
-		height: 600px;
 		display: table;
 		@media screen and (max-width: $screen-md) {
 			display: block;
@@ -555,7 +555,6 @@ h1, h2, h3, h4, h5, h6, figure {
 		}
 	}
 	.fh5co-figure {
-		margin-top: 10em;
 		@media screen and (max-width: $screen-md) {
 			text-align: center;
 			margin-bottom: -10em;
