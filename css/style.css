@@ -281,19 +281,19 @@ nav a {
   }
 }
 
-#fh5co-header .intro .btn {
+#fh5co-header .btn {
   border-bottom: none !important;
   background: #000 !important;
   border: none;
   position: relative;
 }
 
-#fh5co-header .intro .btn:hover {
+#fh5co-header .btn:hover {
   background: #fff !important;
   color: #000;
 }
 
-#fh5co-header .intro .btn .price {
+#fh5co-header .btn .price {
   position: absolute;
   right: -20px;
   top: -20px;
@@ -304,7 +304,7 @@ nav a {
 }
 
 @media screen and (max-width: 480px) {
-  #fh5co-header .intro .btn .price {
+  #fh5co-header .btn .price {
     right: 0;
   }
 }
