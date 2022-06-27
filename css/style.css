@@ -580,7 +580,7 @@ nav a {
 @media screen and (max-width: 992px) {
   .fh5co-feature .fh5co-figure {
     text-align: center;
-    margin-bottom: -10em;
+    margin-bottom: -5em;
     margin-top: 0;
   }
 }
@@ -592,6 +592,7 @@ nav a {
 .fh5co-feature .fh5co-figure img {
   vertical-align: based;
   max-width: 380px;
+  width: 100%;
 }
 
 @media screen and (max-width: 992px) {
