@@ -276,7 +276,6 @@ nav a {
     display: -moz-inline-stack;
     display: inline-block;
     zoom: 1;
-    *display: inline;
     text-align: center;
   }
 }
@@ -389,7 +388,6 @@ nav a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
 }
 
 .fh5co-testimonial .testimony-slide figure img {
@@ -436,7 +434,7 @@ nav a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+
 }
 
 .review figure img {
@@ -850,4 +848,54 @@ nav a {
 .js .animate-box {
   opacity: 0;
 }
+
+.top-banner {
+  margin: 1em auto;
+  text-align: center;
+  display: flex;
+  max-width: 1170px;
+  align-content: center;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.top-banner h3 {
+  font-size: 2em;
+  margin-bottom: .5em;
+}
+.top-banner h4 {
+  font-size: 1.25em;
+  margin-bottom: .75em;
+  font-style: italic;
+}
+
+.top-banner p {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.top-banner a {
+  text-decoration: underline;
+}
+
+.top-banner .text {
+  order: 1;
+}
+
+.top-banner .image {
+  order: 0;
+}
+
+.top-banner img {
+  height: 175px;
+  width: auto;
+}
+
+.nova-square-regular {
+  font-family: "Nova Square", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /*# sourceMappingURL=style.css.map */
