@@ -1,6 +1,7 @@
+import Title from "./components/Title";
 
 function App() {
-  return <h1 className="text-3xl font-bold">Hello World</h1>
+  return <Title>E.M. Denison</Title>
 }
 
 export default App;
