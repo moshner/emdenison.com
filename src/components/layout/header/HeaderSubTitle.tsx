@@ -1,9 +1,7 @@
+import { PropsWithChildren } from "react"
 
-interface Props {
-    children: string;
-}
 
-const Subtitle = ({ children }: Props) => {
+const HeaderSubTitle = ({ children }: PropsWithChildren) => {
   return (
     <h2 className='font-sans-serif text-2xl font-light text-brown-50 drop-shadow text-center'>
         {children}
@@ -11,4 +9,4 @@ const Subtitle = ({ children }: Props) => {
   )
 }
 
-export default Subtitle
+export default HeaderSubTitle
