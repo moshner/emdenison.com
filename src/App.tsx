@@ -20,7 +20,7 @@ function App() {
         title="The Reluctant Cyborg"
         subTitle="A Sci-fi Dystopian Comedy"
         text="A city's fate rests on its shruggiest pair of shoulders"
-        imgSrc="/img/relucant-compound.png"
+        imgSrc="/img/reluctant-cyborg-compound-books.png"
         btnText="More Cyborgs"
         btnColor="orange"
       ></BookObject>
@@ -28,7 +28,7 @@ function App() {
       <BookObject
         title="Digital Native"
         text="Artificial intelligence has awakened—and it needs a therapist"
-        imgSrc="/img/digital-compound.png"
+        imgSrc="/img/digital-native-compound-books.png"
         btnText="More AI"
         btnColor="teal"
       ></BookObject>
