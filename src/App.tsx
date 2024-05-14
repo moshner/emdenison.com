@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Section from "./components/Section";
 import SectionHeader from "./components/SectionHeader";
 import BookObject from "./components/BookObject";
+import Button from "./components/Button";
 
 function App() {
   return (
@@ -32,6 +33,22 @@ function App() {
         btnText="More AI"
         btnColor="teal"
       ></BookObject>
+    </Section>
+    <Section>
+      <SectionHeader bgImg="/img/hero-3.png">
+        Newsletter
+      </SectionHeader>
+      <h3>Semi-regular Emails from E.M.</h3>
+      <p>Sign up for updates, news, new book releases, and more fun from E.M. Denison</p>
+      <Button text="Join the Newsletter"/>
+    </Section>
+    <Section>
+      <SectionHeader bgImg="/img/hero-EM.png">
+        About E.M. Denison
+      </SectionHeader>
+      <p>E.M. Denison lives in Lawrence, Kansas with her husband, three daughters, three cats, and assorted tropical fish. She loves science, fiction, and science fiction and has worked as a geologist, science journalist, science educator, and research grant writer.</p>
+      <p>E.M. is currently working on a three book sci-fi middle-grade series about super heros, ninjas, and robots!</p>
+      <Button text="Follow on Goodreads"/>
     </Section>
   </>)
 }
