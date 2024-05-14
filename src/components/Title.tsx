@@ -1,12 +1,11 @@
-import { ReactNode } from "react"
 
 interface Props {
-    children: ReactNode;
+    children: string;
 }
 
 const Title = ({ children }: Props) => {
   return (
-    <h1 className='font-serif text-4xl font-bold'>
+    <h1 className='font-serif text-4xl font-bold text-brown-50 drop-shadow text-center pb-5 pt-20'>
         {children}
     </h1>
   )
