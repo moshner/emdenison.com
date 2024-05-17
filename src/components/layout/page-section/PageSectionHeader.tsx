@@ -6,7 +6,7 @@ interface Props {
 
 const PageSectionHeader = ({ children, bgImg }: PropsWithChildren<Props>) => {
   return (
-    <div className={`bg-brown-900 bg-no-repeat bg-cover bg-top md:bg-top-3 ${bgImg}`}>
+    <div className={`bg-stone-900 bg-no-repeat bg-cover bg-top md:bg-top-3 ${bgImg} lg:bg-contain lg:bg-left`}>
       {children}
     </div>
   )

@@ -10,6 +10,9 @@ export default {
       serif: ['Roboto Serif', 'serif']
     },  
     extend: {
+      backdropBlur: {
+        xs: '2px',
+      },
       colors: {
         'brown': {
           900: '#3A2104',
@@ -30,6 +33,7 @@ export default {
       'hero-2': "url('/img/hero-2.png')",
       'hero-3': "url('/img/hero-3.png')",
       'hero-EM': "url('/img/hero-EM.png')",
+      'background': "url('/img/background.png')"
       },
       screens: {
         'xs': '500px'
