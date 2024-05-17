@@ -30,7 +30,11 @@ export default {
       'hero-2': "url('/img/hero-2.png')",
       'hero-3': "url('/img/hero-3.png')",
       'hero-EM': "url('/img/hero-EM.png')",
-    },},
+      },
+      screens: {
+        'xs': '500px'
+      }
+    },
   },
   plugins: [],
 }

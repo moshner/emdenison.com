@@ -23,11 +23,12 @@ function HomePage() {
         <SectionTitle>Books</SectionTitle>
       </PageSectionHeader>
 
+      <div className="grid md:max-w-screen-md lg:max-w-screen-lg m-auto lg:grid-cols-2 justify-center">
       <BookCard imgSrc="/img/reluctant-cyborg-compound-books.png">
         <BookCardTitle>The Reluctant Cyborg</BookCardTitle>
         <BookCardSubTitle>A Sci-fi Dystopian Comedy</BookCardSubTitle>
         <BookCardText>A city's fate rests on its shruggiest pair of shoulders</BookCardText>
-        <BookButton text="More Cyborg" color="bg-orange" />
+        <BookButton text="More Cyborgs" color="bg-orange" />
       </BookCard>
       
       <BookCard imgSrc="/img/digital-native-compound-books.png">
@@ -35,6 +36,7 @@ function HomePage() {
         <BookCardText>Artificial intelligence has awakened—and it needs a therapist</BookCardText>
         <BookButton text="More AI" color="bg-teal" />
       </BookCard>
+      </div>
 
     </PageSection>
 
