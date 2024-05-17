@@ -26,10 +26,12 @@ export default {
         'teal': '#217F88',
       }, 
       backgroundPosition: {
-        'top-3': 'center top -5rem',
+        'top-1': 'center top -5rem',
+        'top-2': 'center top -8rem',
+        'top-3': 'center top -13rem',
       },
       backgroundImage: {
-      'hero-1': "url('/img/hero-1.png')",
+      'hero-1': "url('/img/hero-1.jpg')",
       'hero-2': "url('/img/hero-2.png')",
       'hero-3': "url('/img/hero-3.png')",
       'hero-EM': "url('/img/hero-EM.png')",
