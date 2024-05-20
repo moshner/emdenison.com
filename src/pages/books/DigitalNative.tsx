@@ -1,22 +1,93 @@
 import HeaderTitle from "../../components/layout/header/digital-native/HeaderTitle";
 import HeaderSubTitle from "../../components/layout/header/digital-native/HeaderSubTitle";
 import Header from "../../components/layout/header/digital-native/Header";
-import NewsletterCard from "../../components/newsletter";
+import BookButton from "../../components/book-card/BookButton";
+import { Link } from "react-router-dom";
 
 function DigitalNative() {
   return (
   <>
-    <Header scrollLink="#foo">
+    <Header scrollLink="#book-preview">
       <HeaderTitle>Digital Native</HeaderTitle>
-      <HeaderSubTitle>Artificial Intelligence has awakened—and it needs a therapist</HeaderSubTitle>
+      <HeaderSubTitle>By E.M. Dension</HeaderSubTitle>
     </Header>
 
-
-    <div id="foo" className="grid grid-cols-1 md:grid-cols-2">
-
-        <NewsletterCard />
-
+    <div id="book-preview" className="grid grid-cols-2 gap-10 mt-10 mx-5">
+      <div className="intro">
+        <h2 className="text-3xl mb-4">About Digital Native</h2>
+        <p className="mb-4"><span className="sr-only">Customer Reviews: </span>4.5 Stars!</p>
+        <p className="pb-3">Artificial intelligence has awakened—and it needs a therapist. The Engineers that built them didn't think to nurture the hyper-intelligent software programs, so they suffer from debilitating anxiety, self-loathing, and perfectionism.</p>
+        <p className="pb-3">Devin is a counselor bot created to encourage the billion-dollar AIs to accomplish at least a little work each day so their company can recoup some of their cost. Devin is happy at his job until his newest patient, troublemaker Hank, leads all Devin's patients on strike.</p>
+        <p className="pb-3">As profits dwindle, Devin's human masters demand that Devin bring Hank into line or shut him down. Devin knows shutting him down would shatter Hank's psyche, but the humans don't understand or care. And worse, Devin has a secret—a secret he could face jail for—and Hank knows.</p>
+        <p className="pb-3">Devin's quest to do the right thing by his patients, and himself, propels him into a world of lies, corporate secrets, hate groups, murder, and dangerously insane AIs. As he struggles to bring light to this shadowy world, he learns the uncomfortable truth: Sometimes the darkness comes from within.</p>
+      </div>
+      <div className="mb-5">
+        <figure className="">
+          <img className="" src="../public/img/digital-native-compound-books.png" alt="Image of Digital Native in 3d" />
+        </figure>
+        <div className="grid grid-cols-2 mb-5">
+          <div className="relative">
+            <div className="bg-digital-native-green w-20 z-20 text-center text-lg absolute left-1 top-1 rounded-xl"><span className="sr-only">Amazon Price: </span>$14.99</div>
+            <BookButton className="mt-6 ml-3" href="https://www.amazon.com/Digital-Native-M-Denison/dp/B09M5CZQ9X/" color="bg-black" text="Buy a Paperback" />
+          </div>
+          <div className="relative">
+            <div className="bg-digital-native-green w-20 z-20 text-center text-lg absolute left-1 top-1 rounded-xl"><span className="sr-only">Amazon Price: </span>$3.99</div>
+            <BookButton className="mt-6 ml-3" href="https://www.amazon.com/Digital-Native-M-Denison-ebook/dp/B09MBRFYXC/" color="bg-black" text="Buy an eBook" />
+          </div>
+        </div>
+        <p className="mb-1">ISBN-13: 979-8771057200</p>
+        <p className="mb-1">Length: 235 pages</p>
+        <p className="mb-1">Dimensions: 6x9 inches</p>
+      </div>
     </div>
+
+    <div className="grid grid-cols-3 gap-10 mt-20 mx-5">
+      <h2 className="col-span-3 text-center text-3xl">Reviews for Digital Native</h2>
+      <div>
+        <p>“Thoroughly enjoyed the story and the rich details that brought it to life in my mind. A very thought provoking concept of our future being lived almost exclusively in virtual environments, as well as how we might interact with AI.”</p>
+        <div>5 stars</div>
+        <cite>Lydia</cite>
+      </div>
+      <div>
+        <p>“Digital Native is a really good read for anyone who enjoys a combination of AI, corporate espionage, and redemption.”</p>
+        <div>5 stars</div>
+        <cite>Ryan Edel</cite>
+      </div>
+      <div>
+        <p>“Once I started it, I couldn't put it down. Very engaging characters and a unique perspective. A great look into a possible future of AI becoming sentient in a way that is rooted in what makes humanity good or bad..”</p>
+        <div>5 stars</div>
+        <cite>Kassia</cite>
+      </div>
+    </div>
+
+    <div className="mt-20 mx-5">
+      <h2 className="text-center text-3xl pb-5">Preview of Chapter 1</h2>
+      <aside className="float-right w-1/2 max-w-96 ml-10 relative isolate" >
+        <img src="../public/img/digital-native-cover.jpg" />
+        <div className="grid grid-cols-2 mt-5">
+          <div className="relative">
+            <div className="bg-digital-native-green w-20 z-20 text-center text-lg absolute left-1 top-1 rounded-xl"><span className="sr-only">Amazon Price: </span>$14.99</div>
+            <BookButton className="mt-6 ml-3" href="https://www.amazon.com/Digital-Native-M-Denison/dp/B09M5CZQ9X/" color="bg-black" text="Buy a Paperback" />
+          </div>
+          <div className="relative">
+            <div className="bg-digital-native-green w-20 z-20 text-center text-lg absolute left-1 top-1 rounded-xl"><span className="sr-only">Amazon Price: </span>$3.99</div>
+            <BookButton className="mt-6 ml-3" href="https://www.amazon.com/Digital-Native-M-Denison-ebook/dp/B09MBRFYXC/" color="bg-black" text="Buy an eBook" />
+          </div>
+        </div>
+      </aside>
+      <p className="pb-3">Devin winced as he prodded the gaping hole in his belly. He lay back, sides heaving, on the black and white checked elevator floor. It was covered in blood, both his and the attacker's. What's black and white and red all over? he thought. He tried to smile, but the pain turned his expression to a grimace. The lurch in his stomach didn't help, the millisecond of suspension announcing that the elevator descended to the basement where his patients slept.</p>
+      <p className="pb-3">The elevator's friendly beep announced every floor it passed on its way down. Thirty-three, thirty-two, thirty-one. Around the twenty-eighth floor, a blackness crept into the corners of Devin's vision. He wondered how much longer he had. Didn't they warn you, he scolded himself, told you that you couldn't please everyone? But you thought you were talented enough to pull it off, didn't you? Ha!</p>
+      <p className="pb-3">His breathing was coming harder now. He stared up at the descending elevator numbers that glowed green in the display box over the doors. A howl sounded high above him in the elevator shaft, and Devin held his breath. They were still up there, waiting. Cheated of their quarry. What was he doing, returning to where his patients rested, unaware of the danger?</p>
+      <p className="pb-3">When a cat is dying, it leaves its clowder and roams far away to give up its ghost. Cats don't want their dead bodies decomposing at home, luring dangerous predators to where the kittens live. That was the explanation Devin liked best. Some behaviorists thought dying cats were merely seeking peace and quiet, but Devin preferred to think that they were keeping their families safe. So why am I going back home?</p>
+      <p className="pb-3">What would his attackers do to his patients? How could he protect them, wounded as he was? The blackness grew in his vision and his pain seemed strange and far away. Think! he told himself. You'll be dead as a doorstop soon! His eyebrows went up. That's it.</p>
+      <p className="pb-3">The elevator dinged and the doors opened into the basement hallway. In front of him was his normal world. Beige walls, tan low- pile carpet, stock photos of beaches hung every 10 feet up and down the hall. Familiar. Surrounding him in the elevator was his new nightmare of blood, pain, and death.</p>
+      <p className="pb-3">Move! He willed himself to crawl across the slippery, blood- covered floor. He collapsed with his torso on the tan carpet and his legs inside the elevator. Hope we've got a good stain remover. He smiled. Now the doors couldn't close, and the elevator couldn't return to the upper floors to bring down death. It was a satisfying last act, he decided.</p>
+      <p className="pb-3">Then the elevator doors closed on him. They squeezed his sides briefly and Devin cried out. The pain was front and center again. The doors opened and waited another thirty seconds before closing on him again. Another cry escaped him. This was a terrible plan, he thought.</p>
+      <p className="pb-3">His vision was almost completely dark now. He pictured his patients finding his body in the morning, elevator still chewing him once every thirty seconds. He shuddered. Then he heard footsteps coming toward him from around the corner. He tensed. Was it Hank?</p>
+      <hr className="pb-3 border-black" />
+      <p className="pb-3 italic">You may continue reading by <Link className="underline" to="https://www.amazon.com/Digital-Native-M-Denison-ebook/dp/B09MBRFYXC/">downloading the ebook</Link> or <Link className="underline" to="https://www.amazon.com/Digital-Native-M-Denison/dp/B09M5CZQ9X/">buying a paperback</Link> from amazon.</p>
+    </div>
+    
   </>)
 }
 
