@@ -1,6 +1,6 @@
-import HeaderTitle from "../../components/layout/header/HeaderTitle";
-import HeaderSubTitle from "../../components/layout/header/HeaderSubTitle";
-import Header from "../../components/layout/header/Header";
+import HeaderTitle from "../../components/layout/header/digital-native/HeaderTitle";
+import HeaderSubTitle from "../../components/layout/header/digital-native/HeaderSubTitle";
+import Header from "../../components/layout/header/digital-native/Header";
 import NewsletterCard from "../../components/newsletter";
 
 function DigitalNative() {
@@ -8,7 +8,7 @@ function DigitalNative() {
   <>
     <Header scrollLink="#foo">
       <HeaderTitle>Digital Native</HeaderTitle>
-      <HeaderSubTitle>AI needs a therapist</HeaderSubTitle>
+      <HeaderSubTitle>Artificial Intelligence has awakened—and it needs a therapist</HeaderSubTitle>
     </Header>
 
 
