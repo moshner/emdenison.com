@@ -17,12 +17,12 @@ import ButtonOutline from "../components/ButtonOutline";
 function HomePage() {
   return (
   <>
-    <Header>
+    <Header scrollLink="#books">
       <HeaderTitle>E.M. Denison</HeaderTitle>
       <HeaderSubTitle>Sci-fi, magic, humor, heart</HeaderSubTitle>
     </Header>
 
-    <PageSection>
+    <PageSection id="books">
       <PageSectionHeaderBooks bgImg="bg-hero-2">
         <SectionTitleBooks>Books</SectionTitleBooks>
       </PageSectionHeaderBooks>
@@ -32,13 +32,13 @@ function HomePage() {
         <BookCardTitle>The Reluctant Cyborg</BookCardTitle>
         <BookCardSubTitle>A Sci-fi Dystopian Comedy</BookCardSubTitle>
         <BookCardText>A city's fate rests on its shruggiest pair of shoulders</BookCardText>
-        <BookButton text="More Cyborgs" color="bg-orange" />
+        <BookButton text="More Cyborgs" href="/book/the-reluctant-cyborg" color="bg-orange" />
       </BookCard>
       
       <BookCard imgSrc="/img/digital-native-compound-books.png">
         <BookCardTitle>Digital Native</BookCardTitle>
         <BookCardText>Artificial intelligence has awakened—and it needs a therapist</BookCardText>
-        <BookButton text="More AI" color="bg-teal" />
+        <BookButton text="More AI" href="/book/digital-native" color="bg-teal" />
       </BookCard>
       </div>
 
@@ -53,9 +53,8 @@ function HomePage() {
             <SectionTitle>About E.M. Denison</SectionTitle>
           </PageSectionHeader>
             <div className="mx-auto w-4/5 my-4">
-              <p className="pb-2">E.M. Denison lives in Lawrence, Kansas with her husband, three daughters, three cats, and assorted tropical fish. She loves science, fiction, and science fiction and has worked as a geologist, science journalist, science educator, and research grant writer.</p>
-              <p>E.M. is currently working on a three book sci-fi middle-grade series about super heros, ninjas, and robots!</p>
-              <ButtonOutline text="Follow on Goodreads" />
+              <p className="pb-2">I grew up in Kansas and played a lot of trombone in high school and college. I studied geology in college and lived in a paleontology lab measuring the fungus holes in petrified Cretaceous wood and Devonian lungfish burrows. I have worked as an engineering geologist, a science journalist, and a medical grant writer. In 2010, I married the love of my life and we have three hilarious little kids.</p>
+              <ButtonOutline href="https://www.goodreads.com/author/show/22379452.E_M_Denison" text="Follow on Goodreads" />
             </div>
         </PageSection>
 

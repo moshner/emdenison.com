@@ -1,9 +1,12 @@
 import { PropsWithChildren } from "react"
 
+interface Props {
+  id?: string;
+}
 
-const PageSection = ({ children }: PropsWithChildren) => {
+const PageSection = ({ id, children }: PropsWithChildren<Props>) => {
   return (
-    <section className="mt-10 max-w-screen-xl m-auto">
+    <section id={id} className="mt-10 max-w-screen-xl m-auto">
       {children}
     </section>
   )
