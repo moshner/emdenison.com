@@ -32,7 +32,7 @@ function HomePage() {
         <BookCardTitle>The Reluctant Cyborg</BookCardTitle>
         <BookCardSubTitle>A Sci-fi Dystopian Comedy</BookCardSubTitle>
         <BookCardText>A city's fate rests on its shruggiest pair of shoulders</BookCardText>
-        <BookButton text="More Cyborgs" href="/book/the-reluctant-cyborg" color="bg-orange" />
+        <BookButton text="More Cyborgs" href="/book/the-reluctant-cyborg" color="bg-orange-700" />
       </BookCard>
       
       <BookCard imgSrc="/img/digital-native-compound-books.png">

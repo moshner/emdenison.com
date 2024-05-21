@@ -9,7 +9,8 @@ export default {
       sans: ['Roboto', 'sans-serif'],
       serif: ['Roboto Serif', 'serif'],
       "digital-native-serif": ['Zilla Slab', 'serif'],
-      "digital-native-sans": ['Carrois Gothic SC', 'sans-serif']
+      "digital-native-sans": ['Carrois Gothic SC', 'sans-serif'],
+      "reluctant-cyborg-sans": ['Nova Square', 'sans-serif'],
     },  
     extend: {
       backdropBlur: {
@@ -24,10 +25,10 @@ export default {
           100: '#F1BFA2',
           50: '#FFD4BB',
         },
-        'orange': '#E24810',
         'teal': '#217F88',
         'digital-native-bg': '#182528f2',
-        'digital-native-green': '#6DA09B'
+        'digital-native-green': '#6DA09B',
+        'reluctant-cyborg-bg': '#123456'
       }, 
       backgroundPosition: {
         'top-1': 'center top -5rem',
@@ -40,7 +41,8 @@ export default {
       'hero-3': "url('/img/hero-3.png')",
       'hero-EM': "url('/img/hero-EM.png')",
       'background': "url('/img/background.png')",
-      'hero-digital-native': "url('/img/hero-digital-native.jpg')"
+      'hero-digital-native': "url('/img/hero-digital-native.jpg')",
+      'hero-reluctant-cyborg': "url('/img/reluctant-cyborg-background.png')"
       },
       screens: {
         'xs': '500px'

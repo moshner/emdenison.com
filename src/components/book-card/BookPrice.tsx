@@ -2,11 +2,12 @@
 interface Props {
     screenReader: string;
     price: string;
+    bgColor?: string;
 }
 
-const BookPrice = ({ screenReader, price }: Props) => {
+const BookPrice = ({ bgColor = "bg-digital-native-green", screenReader, price }: Props) => {
   return (
-    <div className="bg-digital-native-green w-20 z-20 text-center text-lg absolute left-1 top-1 rounded-xl"><span className="sr-only">{screenReader}: </span>{price}</div>
+    <div className={`${bgColor} w-20 z-20 text-center text-lg absolute left-1 top-1 rounded-xl`}><span className="sr-only">{screenReader}: </span>{price}</div>
   )
 }
 
