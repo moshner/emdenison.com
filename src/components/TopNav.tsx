@@ -22,10 +22,10 @@ const TopNav = ({ menuColor = "text-brown-50", active = "home" }: Props) => {
 
     return (
         <>
-            <ul id="menu" className={`nav__menu ${showMenu ? "right-0" : "-right-full"} fixed top-0 px-10 py-16 bg-gray-900 z-50 h-full md:h-12 text-xl
-            md:right-0 md:absolute md:mx-auto md:w-full md:align-right md:flex md:justify-center md:items-center md:p-0 md:bg-transparent md:flex-row md:space-x-6 transition-all duration-200`}>
+            <ul id="menu" className={`nav__menu ${showMenu ? "right-0" : "-right-full"} fixed top-0 px-10 py-16 bg-gray-900 z-50 h-full md:h-12 text-lg
+            md:right-0 md:absolute md:mx-auto md:w-full md:align-right md:flex md:justify-center md:items-center md:p-0 md:bg-transparent md:flex-row md:space-x-3 transition-all duration-200`}>
                 <li className={`md:hidden z-90 absolute top-4 right-6`}>
-                    <a href="javascript:void(0)" 
+                    <a  
                         className={`text-right ${menuColor} text-4xl`}
                         onClick={toggleMenu}>&times;</a>
                 </li>
@@ -40,7 +40,7 @@ const TopNav = ({ menuColor = "text-brown-50", active = "home" }: Props) => {
                 </li>
                 <li className="pt-3 pl-5 md:pl-0">
                     <Link onClick={closeMenuOnMobile} className={`${menuColor} ${active!=="reluctant-cyborg" ? "underline": active}`} to="../book/the-reluctant-cyborg">
-                        The Reluctant Cyborg (NEW!)
+                        The Reluctant Cyborg
                     </Link>
                 </li>
                 <li className="pt-3 pl-5 md:pl-0">
