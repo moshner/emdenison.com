@@ -5,7 +5,7 @@ interface Props {
     outline?: boolean;
     color?: string;
     href: string;
-    className: string;
+    className?: string;
 }
 
 const BookButton = ({ className, href, text, color = "bg-brown-900"}: Props) => {
