@@ -30,21 +30,23 @@ function DigitalNative() {
             <BookButton className="mt-6 ml-3" href="https://www.amazon.com/Digital-Native-M-Denison/dp/B09M5CZQ9X/" color="bg-black" text="Buy a Paperback" />
           </div>
         </div>
+        <div className="mb-3">
+          <Stars rating={4.5} /><span className="pl-3">4.5 stars on Amazon!</span>
+        </div>
         <BodyCopy className="mb-1">ISBN-13: 979-8771057200</BodyCopy>
         <BodyCopy className="mb-1">Length: 235 pages</BodyCopy>
         <BodyCopy className="mb-1">Dimensions: 6x9 inches</BodyCopy>
       </BookAside>
       <div className="mt-10 md:mt-0">
         <BookH2>About Digital Native</BookH2>
-        <Stars rating={4.5} /><span className="pl-5">4.5 stars on Amazon!</span>
-        <BodyCopy className="mt-5">Artificial intelligence has awakened—and it needs a therapist. The Engineers that built them didn't think to nurture the hyper-intelligent software programs, so they suffer from debilitating anxiety, self-loathing, and perfectionism.</BodyCopy>
-        <BodyCopy>Devin is a counselor bot created to encourage the billion-dollar AIs to accomplish at least a little work each day so their company can recoup some of their cost. Devin is happy at his job until his newest patient, troublemaker Hank, leads all Devin's patients on strike.</BodyCopy>
-        <BodyCopy>As profits dwindle, Devin's human masters demand that Devin bring Hank into line or shut him down. Devin knows shutting him down would shatter Hank's psyche, but the humans don't understand or care. And worse, Devin has a secret—a secret he could face jail for—and Hank knows.</BodyCopy>
-        <BodyCopy>Devin's quest to do the right thing by his patients, and himself, propels him into a world of lies, corporate secrets, hate groups, murder, and dangerously insane AIs. As he struggles to bring light to this shadowy world, he learns the uncomfortable truth: Sometimes the darkness comes from within.</BodyCopy>
+        <BodyCopy className="text-lg mb-5">Artificial intelligence has awakened—and it needs a therapist. The Engineers that built them didn't think to nurture the hyper-intelligent software programs, so they suffer from debilitating anxiety, self-loathing, and perfectionism.</BodyCopy>
+        <BodyCopy className="text-lg mb-5">Devin is a counselor bot created to encourage the billion-dollar AIs to accomplish at least a little work each day so their company can recoup some of their cost. Devin is happy at his job until his newest patient, troublemaker Hank, leads all Devin's patients on strike.</BodyCopy>
+        <BodyCopy className="text-lg mb-5">As profits dwindle, Devin's human masters demand that Devin bring Hank into line or shut him down. Devin knows shutting him down would shatter Hank's psyche, but the humans don't understand or care. And worse, Devin has a secret—a secret he could face jail for—and Hank knows.</BodyCopy>
+        <BodyCopy className="text-lg mb-5">Devin's quest to do the right thing by his patients, and himself, propels him into a world of lies, corporate secrets, hate groups, murder, and dangerously insane AIs. As he struggles to bring light to this shadowy world, he learns the uncomfortable truth: Sometimes the darkness comes from within.</BodyCopy>
       </div>
     </div>
 
-    <div className="md:grid md:grid-cols-3 md:gap-10 mt-20 mx-5">
+    <div className="md:grid md:grid-cols-3 md:gap-x-10 mt-20 mx-5">
       <BookH2>Reviews for Digital Native</BookH2>
       <Review className="mb-6" stars={5} cite="Lydia">Thoroughly enjoyed the story and the rich details that brought it to life in my mind. A very thought provoking concept of our future being lived almost exclusively in virtual environments, as well as how we might interact with AI.</Review>
       <Review className="mb-6" stars={5} cite="Ryan Edel">Digital Native is a really good read for anyone who enjoys a combination of AI, corporate espionage, and redemption.</Review>
@@ -65,7 +67,7 @@ function DigitalNative() {
           </div>
         </div>
       </BookAside>
-      <BodyCopy>Devin winced as he prodded the gaping hole in his belly. He lay back, sides heaving, on the black and white checked elevator floor. It was covered in blood, both his and the attacker's. What's black and white and red all over? he thought. He tried to smile, but the pain turned his expression to a grimace. The lurch in his stomach didn't help, the millisecond of suspension announcing that the elevator descended to the basement where his patients slept.</BodyCopy>
+      <BodyCopy><span className="float-left text-5xl font-digital-native-serif">D</span>evin winced as he prodded the gaping hole in his belly. He lay back, sides heaving, on the black and white checked elevator floor. It was covered in blood, both his and the attacker's. What's black and white and red all over? he thought. He tried to smile, but the pain turned his expression to a grimace. The lurch in his stomach didn't help, the millisecond of suspension announcing that the elevator descended to the basement where his patients slept.</BodyCopy>
       <BodyCopy>The elevator's friendly beep announced every floor it passed on its way down. Thirty-three, thirty-two, thirty-one. Around the twenty-eighth floor, a blackness crept into the corners of Devin's vision. He wondered how much longer he had. Didn't they warn you, he scolded himself, told you that you couldn't please everyone? But you thought you were talented enough to pull it off, didn't you? Ha!</BodyCopy>
       <BodyCopy>His breathing was coming harder now. He stared up at the descending elevator numbers that glowed green in the display box over the doors. A howl sounded high above him in the elevator shaft, and Devin held his breath. They were still up there, waiting. Cheated of their quarry. What was he doing, returning to where his patients rested, unaware of the danger?</BodyCopy>
       <BodyCopy>When a cat is dying, it leaves its clowder and roams far away to give up its ghost. Cats don't want their dead bodies decomposing at home, luring dangerous predators to where the kittens live. That was the explanation Devin liked best. Some behaviorists thought dying cats were merely seeking peace and quiet, but Devin preferred to think that they were keeping their families safe. So why am I going back home?</BodyCopy>
