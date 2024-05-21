@@ -7,7 +7,7 @@ interface Props {
 
 const BookAside = ({ alt, imgSrc, children }: PropsWithChildren<Props>) => {
   return (
-    <aside className="float-right w-1/2 max-w-96 ml-10 relative isolate" >
+    <aside className="m-auto mb-3 md:float-right md:w-1/2 max-w-96 md:ml-10 relative isolate" >
         <img src={imgSrc} alt={alt} />
         {children}
     </aside>

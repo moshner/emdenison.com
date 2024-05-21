@@ -22,34 +22,33 @@ function DigitalNative() {
       <BookAside imgSrc="../img/digital-native-compound-books.png" alt="Image of Digital Native in 3d">
         <div className="grid grid-cols-2 mb-5">
           <div className="relative">
-            <BookPrice screenReader="Amazon Price" price="$14.99" />
-            <BookButton className="mt-6 ml-3" href="https://www.amazon.com/Digital-Native-M-Denison/dp/B09M5CZQ9X/" color="bg-black" text="Buy a Paperback" />
-          </div>
-          <div className="relative">
             <BookPrice screenReader="Amazon Price" price="$3.99" />
             <BookButton className="mt-6 ml-3" href="https://www.amazon.com/Digital-Native-M-Denison-ebook/dp/B09MBRFYXC/" color="bg-black" text="Buy an eBook" />
+          </div>
+          <div className="relative">
+            <BookPrice screenReader="Amazon Price" price="$14.99" />
+            <BookButton className="mt-6 ml-3" href="https://www.amazon.com/Digital-Native-M-Denison/dp/B09M5CZQ9X/" color="bg-black" text="Buy a Paperback" />
           </div>
         </div>
         <BodyCopy className="mb-1">ISBN-13: 979-8771057200</BodyCopy>
         <BodyCopy className="mb-1">Length: 235 pages</BodyCopy>
         <BodyCopy className="mb-1">Dimensions: 6x9 inches</BodyCopy>
       </BookAside>
-      <div className="intro">
+      <div className="mt-10 md:mt-0">
         <BookH2>About Digital Native</BookH2>
-        <Stars rating={4.5} />
-        <BodyCopy className="mb-4"><span className="sr-only">Customer Reviews: </span>4.5 Stars!</BodyCopy>
-        <BodyCopy>Artificial intelligence has awakened—and it needs a therapist. The Engineers that built them didn't think to nurture the hyper-intelligent software programs, so they suffer from debilitating anxiety, self-loathing, and perfectionism.</BodyCopy>
+        <Stars rating={4.5} /><span className="pl-5">4.5 stars on Amazon!</span>
+        <BodyCopy className="mt-5">Artificial intelligence has awakened—and it needs a therapist. The Engineers that built them didn't think to nurture the hyper-intelligent software programs, so they suffer from debilitating anxiety, self-loathing, and perfectionism.</BodyCopy>
         <BodyCopy>Devin is a counselor bot created to encourage the billion-dollar AIs to accomplish at least a little work each day so their company can recoup some of their cost. Devin is happy at his job until his newest patient, troublemaker Hank, leads all Devin's patients on strike.</BodyCopy>
         <BodyCopy>As profits dwindle, Devin's human masters demand that Devin bring Hank into line or shut him down. Devin knows shutting him down would shatter Hank's psyche, but the humans don't understand or care. And worse, Devin has a secret—a secret he could face jail for—and Hank knows.</BodyCopy>
         <BodyCopy>Devin's quest to do the right thing by his patients, and himself, propels him into a world of lies, corporate secrets, hate groups, murder, and dangerously insane AIs. As he struggles to bring light to this shadowy world, he learns the uncomfortable truth: Sometimes the darkness comes from within.</BodyCopy>
       </div>
     </div>
 
-    <div className="grid grid-cols-3 gap-10 mt-20 mx-5">
+    <div className="md:grid md:grid-cols-3 md:gap-10 mt-20 mx-5">
       <BookH2>Reviews for Digital Native</BookH2>
-      <Review stars={5} cite="Lydia">Thoroughly enjoyed the story and the rich details that brought it to life in my mind. A very thought provoking concept of our future being lived almost exclusively in virtual environments, as well as how we might interact with AI.</Review>
-      <Review stars={5} cite="Ryan Edel">Digital Native is a really good read for anyone who enjoys a combination of AI, corporate espionage, and redemption.</Review>
-      <Review stars={5} cite="Kassia">Once I started it, I couldn't put it down. Very engaging characters and a unique perspective. A great look into a possible future of AI becoming sentient in a way that is rooted in what makes humanity good or bad..</Review>
+      <Review className="mb-6" stars={5} cite="Lydia">Thoroughly enjoyed the story and the rich details that brought it to life in my mind. A very thought provoking concept of our future being lived almost exclusively in virtual environments, as well as how we might interact with AI.</Review>
+      <Review className="mb-6" stars={5} cite="Ryan Edel">Digital Native is a really good read for anyone who enjoys a combination of AI, corporate espionage, and redemption.</Review>
+      <Review className="mb-6" stars={5} cite="Kassia">Once I started it, I couldn't put it down. Very engaging characters and a unique perspective. A great look into a possible future of AI becoming sentient in a way that is rooted in what makes humanity good or bad..</Review>
     </div>
 
     <div className="mt-20 mx-5">
@@ -57,12 +56,12 @@ function DigitalNative() {
       <BookAside imgSrc="../img/digital-native-cover.jpg" alt="Full cover of Digital Native that has a robot hand shaking the hand of a human in a business suit">
         <div className="grid grid-cols-2 mt-5">
           <div className="relative">
-            <BookPrice screenReader="Amazon Price" price="$14.99" />
-            <BookButton className="mt-6 ml-3" href="https://www.amazon.com/Digital-Native-M-Denison/dp/B09M5CZQ9X/" color="bg-black" text="Buy a Paperback" />
-          </div>
-          <div className="relative">
             <BookPrice screenReader="Amazon Price" price="$3.99" />
             <BookButton className="mt-6 ml-3" href="https://www.amazon.com/Digital-Native-M-Denison-ebook/dp/B09MBRFYXC/" color="bg-black" text="Buy an eBook" />
+          </div>
+          <div className="relative">
+            <BookPrice screenReader="Amazon Price" price="$14.99" />
+            <BookButton className="mt-6 ml-3" href="https://www.amazon.com/Digital-Native-M-Denison/dp/B09M5CZQ9X/" color="bg-black" text="Buy a Paperback" />
           </div>
         </div>
       </BookAside>
