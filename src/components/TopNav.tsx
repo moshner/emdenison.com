@@ -22,38 +22,38 @@ const TopNav = ({ menuColor = "text-brown-50", active = "home" }: Props) => {
 
     return (
         <>
-            <ul id="menu" className={`nav__menu ${showMenu ? "visible" : "hidden"} fixed top-0 right-0 px-10 py-16 bg-gray-900 z-50 h-full text-xl
-            md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6`}>
-                <li className="md:hidden z-90 fixed top-4 right-6">
+            <ul id="menu" className={`nav__menu ${showMenu ? "right-0" : "-right-full"} fixed top-0 px-10 py-16 bg-gray-900 z-50 h-full md:h-12 text-xl
+            md:right-0 md:absolute md:mx-auto md:w-full md:align-right md:flex md:justify-center md:items-center md:p-0 md:bg-transparent md:flex-row md:space-x-6 transition-all duration-200`}>
+                <li className={`md:hidden z-90 absolute top-4 right-6`}>
                     <a href="javascript:void(0)" 
-                        className="text-right text-white text-4xl"
+                        className={`text-right ${menuColor} text-4xl`}
                         onClick={toggleMenu}>&times;</a>
                 </li>
-                <li className="pt-3 text-white duration-300">
+                <li className={`pt-3 duration-300 ${menuColor}`}>
                     <Link onClick={closeMenuOnMobile} 
                             className={`${active!=="home" ? "underline": active} pr-3`} to="../">
                                 Home
                     </Link>
                 </li>
-                <li className="pt-6 italic text-white">
+                <li className={`pt-6 md:pt-3 italic ${menuColor} opacity-50`}>
                     Books:
                 </li>
-                <li className="pt-3 pl-5">
-                    <Link onClick={closeMenuOnMobile} className={`text-white ${active!=="reluctant-cyborg" ? "underline": active}`} to="../book/the-reluctant-cyborg">
+                <li className="pt-3 pl-5 md:pl-0">
+                    <Link onClick={closeMenuOnMobile} className={`${menuColor} ${active!=="reluctant-cyborg" ? "underline": active}`} to="../book/the-reluctant-cyborg">
                         The Reluctant Cyborg (NEW!)
                     </Link>
                 </li>
-                <li className="pt-3 pl-5">
-                    <Link onClick={closeMenuOnMobile} className={`text-white ${active!=="digital-native" ? "underline": active}`} to="../book/digital-native">
+                <li className="pt-3 pl-5 md:pl-0">
+                    <Link onClick={closeMenuOnMobile} className={`${menuColor} ${active!=="digital-native" ? "underline": active}`} to="../book/digital-native">
                         Digital Native
                     </Link>
                 </li>
-                <li className="pt-6">
+                <li className="pt-6 md:hidden">
                     <ButtonOutline href="#newsletter" text="Join Newsletter" textColor="text-white" borderColor="br-white" />
                 </li>
             </ul>
             <div className="flex items-center md:hidden">
-                <button className={`${menuColor} text-4xl font-bold opacity-70 hover:opacity-100 duration-300 fixed top-2 right-2 z-10`}
+                <button className={`${menuColor} text-4xl font-bold opacity-70 hover:opacity-100 duration-300 absolute top-2 right-2 z-10`}
                     onClick={toggleMenu}>
                     &#9776;
                 </button>

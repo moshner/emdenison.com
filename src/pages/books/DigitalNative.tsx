@@ -15,7 +15,7 @@ function DigitalNative() {
   <>
     <Header scrollLink="#book-preview">
       <HeaderTitle>Digital Native</HeaderTitle>
-      <HeaderSubTitle>By E.M. Dension</HeaderSubTitle>
+      <HeaderSubTitle>By E.M. Denison</HeaderSubTitle>
     </Header>
 
     <div id="book-preview" className="mt-10 mx-5">

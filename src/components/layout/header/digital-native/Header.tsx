@@ -8,7 +8,7 @@ interface Props {
 
 const Header = ({ scrollLink, children }: PropsWithChildren<Props>) => {
   return (
-    <div className={`h-screen lg:h-96 bg-digital-native-bg bg-hero-digital-native bg-no-repeat bg-cover bg-top lg:bg-top-3 max-w-screen-xl m-auto transition-all duration-[5000ms] hover:bg-bottom`}>
+    <div className={`relative h-screen lg:h-96 bg-digital-native-bg bg-hero-digital-native bg-no-repeat bg-cover bg-top lg:bg-top-3 max-w-screen-xl m-auto transition-[background] duration-[20000ms] hover:bg-bottom motion-reduce:transition-none motion-reduce:hover:br-top`}>
       <TopNav active="digital-native" menuColor="text-white" />
       <div className="backdrop-blur-xs h-full bg-digital-native-bg content-center">
         {children}
