@@ -13,10 +13,19 @@ import BookCardSubTitle from "../components/book-card/BookCardSubTitle";
 import BookCardText from "../components/book-card/BookCardText";
 import NewsletterCard from "../components/newsletter";
 import ButtonOutline from "../components/ButtonOutline";
+import {Helmet} from "react-helmet";
 
 function HomePage() {
   return (
   <>
+
+    <Helmet>
+      <title>E.M. Denison - Author</title>
+      <meta name="description" content="Author website for E.M. Denison. Sci-fi, magic, humor, heart." />
+      <meta name="keywords" content="Sci-fi, magic, humor, heart, books, novel, fiction, Post-Apocalyptic, science fiction, ebook, kindle, author" />
+      <meta name="author" content="E.M. Denison" />
+    </Helmet>
+
     <Header scrollLink="#books">
       <HeaderTitle>E.M. Denison</HeaderTitle>
       <HeaderSubTitle>Sci-fi, magic, humor, heart</HeaderSubTitle>

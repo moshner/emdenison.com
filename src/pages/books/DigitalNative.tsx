@@ -9,10 +9,18 @@ import BookAside from "../../components/BookAside";
 import BookH2 from "../../components/BookH2";
 import Review from "../../components/Review";
 import Stars from "../../components/Stars";
+import {Helmet} from "react-helmet";
 
 function DigitalNative() {
   return (
   <>
+    <Helmet>
+      <title>Digital Native - A Novel by E.M. Denison</title>
+      <meta name="description" content="Artificial intelligence has awakened—and it needs a therapist. The Engineers that built them didn't think to nurture the hyper-intelligent software programs, so they suffer from debilitating anxiety, self-loathing, and perfectionism." />
+      <meta name="keywords" content="Sci-fi, magic, humor, heart, books, novel, fiction, Post-Apocalyptic, science fiction, ebook, kindle, author" />
+      <meta name="author" content="E.M. Denison" />
+    </Helmet>
+
     <Header scrollLink="#book-preview">
       <HeaderTitle>Digital Native</HeaderTitle>
       <HeaderSubTitle>By E.M. Denison</HeaderSubTitle>

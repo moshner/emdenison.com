@@ -7,10 +7,18 @@ import BodyCopy from "../../components/BodyCopy";
 import BookPrice from "../../components/book-card/BookPrice";
 import BookAside from "../../components/BookAside";
 import BookH2 from "../../components/BookH2";
+import { Helmet } from "react-helmet";
 
 function TheReluctantCyborg() {
   return (
   <>
+    <Helmet>
+      <title>The Reluctant Cyborg - A Novel by E.M. Denison</title>
+      <meta name="description" content="A lighthearted dystopian sci-fi satire that reads like Upton Sinclair's The Jungle retold as a buddy love comedy between an irresponsible super cyborg and a judgmental medical robot." />
+      <meta name="keywords" content="Dystopian comedy,Buddy love,Evil robot,friendly robot,near future cyberpunk,sci-fi satire,post-apocalyptic,reluctant hero,surprise baby,friends to lovers,transhumanism,light-hearted comedy,Connie Willis,Jasper Fforde,John Scalzi,Douglas Adams,Terry Pratchett,working mom,war hero,Martha Wells,pop-culture references" />
+      <meta name="author" content="E.M. Denison" />
+    </Helmet>
+
     <Header scrollLink="#book-preview">
       <HeaderTitle>The Reluctant Cyborg</HeaderTitle>
       <HeaderSubTitle>By E.M. Denison</HeaderSubTitle>
