@@ -34,6 +34,7 @@ export default {
         'top-1': 'center top -5rem',
         'top-2': 'center top -8rem',
         'top-3': 'center top -13rem',
+        'right-3': 'right -5rem top',
       },
       backgroundImage: {
       'hero-1': "url('/img/hero-1.jpg')",
