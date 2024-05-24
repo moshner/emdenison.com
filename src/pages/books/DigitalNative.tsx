@@ -10,6 +10,7 @@ import BookH2 from "../../components/BookH2";
 import Review from "../../components/Review";
 import Stars from "../../components/Stars";
 import {Helmet} from "react-helmet";
+import Footer from "../../components/layout/footer";
 
 function DigitalNative() {
   return (
@@ -90,6 +91,7 @@ function DigitalNative() {
       <BodyCopy className="pb-3 italic">You may continue reading by <Link className="underline" to="https://www.amazon.com/Digital-Native-M-Denison-ebook/dp/B09MBRFYXC/">downloading the ebook</Link> or <Link className="underline" to="https://www.amazon.com/Digital-Native-M-Denison/dp/B09M5CZQ9X/">buying a paperback</Link> from amazon.</BodyCopy>
     </div>
     
+    <Footer />
   </>)
 }
 

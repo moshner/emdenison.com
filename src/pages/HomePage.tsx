@@ -14,6 +14,7 @@ import BookCardText from "../components/book-card/BookCardText";
 import NewsletterCard from "../components/newsletter";
 import ButtonOutline from "../components/ButtonOutline";
 import {Helmet} from "react-helmet";
+import Footer from "../components/layout/footer";
 
 function HomePage() {
   return (
@@ -68,6 +69,8 @@ function HomePage() {
         </PageSection>
 
     </div>
+
+    <Footer />
   </>)
 }
 

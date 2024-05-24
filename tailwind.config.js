@@ -42,7 +42,8 @@ export default {
       'hero-EM': "url('/img/hero-EM.png')",
       'background': "url('/img/background.png')",
       'hero-digital-native': "url('/img/hero-digital-native.jpg')",
-      'hero-reluctant-cyborg': "url('/img/reluctant-cyborg-background.png')"
+      'hero-reluctant-cyborg': "url('/img/reluctant-cyborg-background.png')",
+      'footer-1': "url('/img/footer-1.jpg')",
       },
       screens: {
         'xs': '500px'
