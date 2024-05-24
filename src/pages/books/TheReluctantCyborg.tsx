@@ -8,6 +8,7 @@ import BookPrice from "../../components/book-card/BookPrice";
 import BookAside from "../../components/BookAside";
 import BookH2 from "../../components/BookH2";
 import { Helmet } from "react-helmet";
+import Footer from "../../components/layout/footer";
 
 function TheReluctantCyborg() {
   return (
@@ -54,20 +55,18 @@ function TheReluctantCyborg() {
 
     <div className="mt-20 mx-5 max-w-screen-lg lg:mx-auto">
       <BookH2 font="font-reluctant-cyborg-sans tracking-tight italic">Preview of Chapter 1</BookH2>
-      <div className="lg:sticky lg:top-0">
-        <BookAside imgSrc="../img/reluctant-cyborg-cover.jpg" alt="Full cover of The Reluctant Cyborg">
-          <div className="grid grid-cols-2 mt-5">
-            <div className="relative">
-              <BookPrice screenReader="Amazon Price" price="$5.99" bgColor="bg-orange-400" />
-              <BookButton className="mt-6 ml-3" href="https://www.amazon.com/dp/B0D3YKH76X" color="bg-black" text="Buy an eBook" />
-            </div>
-            <div className="relative">
-              <BookPrice screenReader="Amazon Price" price="$17.99" bgColor="bg-orange-400" />
-              <BookButton className="mt-6 ml-3" href="https://a.co/d/61niJFB" color="bg-black" text="Buy a Paperback" />
-            </div>
+      <BookAside imgSrc="../img/reluctant-cyborg-cover.jpg" alt="Full cover of The Reluctant Cyborg">
+        <div className="grid grid-cols-2 mt-5">
+          <div className="relative">
+            <BookPrice screenReader="Amazon Price" price="$5.99" bgColor="bg-orange-400" />
+            <BookButton className="mt-6 ml-3" href="https://www.amazon.com/dp/B0D3YKH76X" color="bg-black" text="Buy an eBook" />
           </div>
-        </BookAside>
-      </div>
+          <div className="relative">
+            <BookPrice screenReader="Amazon Price" price="$17.99" bgColor="bg-orange-400" />
+            <BookButton className="mt-6 ml-3" href="https://a.co/d/61niJFB" color="bg-black" text="Buy a Paperback" />
+          </div>
+        </div>
+      </BookAside>
       <BodyCopy className="text-center font-bold text-xl mb-4">Announcement</BodyCopy>
 			<BodyCopy className="text-center font-bold mb-4">Year 2182—Ezeny</BodyCopy>
 			<BodyCopy><span className="float-left text-5xl font-digital-native-serif">E</span>zeny was only standing beside his eleven half brothers for appearance's sake. The other young men were waiting to greet their various mothers after a long separation. Ezeny alone would not be seeing his mother that night. But there he was anyway. Lined up in a greeting queue in the foyer of the family high-rise, flanked by stern servants and rigid with gentlemanly good posture. </BodyCopy>
@@ -155,10 +154,11 @@ function TheReluctantCyborg() {
       <BodyCopy>Ezeny couldn't be as sanguine about the war as his half brothers. Over their years of friendship, Cricket had told him stories of life outside the high-rises. The war wasn't going well, or why else would Everland High Command make even wealthy boys fight? <span className="italic">They must be running low on poor men.</span></BodyCopy>
       <BodyCopy>His safety was shattering. His father's money had kept him cushioned from all the things people like Cricket had to face every day. Ezeny liked being cushioned, dammit. </BodyCopy>
       <BodyCopy><span className="italic">How am </span>I <span className="italic">going to fight in a war? </span>He was made for eating and drinking and kissing pretty girls. He was certain of that. His flesh crawled looking at the images of the dead. He didn't know if it would be worse to <span className="italic">be </span>a corpse or make someone <span className="italic">else </span>into a corpse. <span className="italic">War presents opportunities for both,</span> he realized. <span className="italic">Lovely.</span></BodyCopy>
+    </div>
       <hr className="pb-3 border-black" />
       <BodyCopy className="pb-3 italic">You may continue reading by <Link className="underline" to="https://www.amazon.com/dp/B0D3YKH76X">downloading the ebook</Link> or <Link className="underline" to="https://a.co/d/61niJFB">buying a paperback</Link> from amazon.</BodyCopy>
-    </div>
-    
+      
+    <Footer />
   </>)
 }
 
