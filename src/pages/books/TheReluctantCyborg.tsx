@@ -17,7 +17,20 @@ function TheReluctantCyborg() {
       <title>The Reluctant Cyborg - A Novel by E.M. Denison</title>
       <meta name="description" content="A lighthearted dystopian sci-fi satire that reads like Upton Sinclair's The Jungle retold as a buddy love comedy between an irresponsible super cyborg and a judgmental medical robot." />
       <meta name="keywords" content="Dystopian comedy,Buddy love,Evil robot,friendly robot,near future cyberpunk,sci-fi satire,post-apocalyptic,reluctant hero,surprise baby,friends to lovers,transhumanism,light-hearted comedy,Connie Willis,Jasper Fforde,John Scalzi,Douglas Adams,Terry Pratchett,working mom,war hero,Martha Wells,pop-culture references" />
-      <meta name="author" content="E.M. Denison" />
+      <meta name="author" content="E.M. Denison" />      
+
+      {/* <!-- Facebook and Twitter integration --> */}
+      <meta property="og:title" content="The Reluctant Cyborg by E.M. Denison"/>
+      <meta property="og:image" content="https://emdenison.com/img/social/facebook-image-the-reluctant-cyborg.png"/>
+      <meta property="og:url" content="https://emdenison.com/book/the-reluctant-cyborg"/>
+      <meta property="og:site_name" content="E.M. Denison - Author"/>
+      <meta property="og:description" content="A Sci-fi Dystopian Comedy"/>
+      <meta name="twitter:title" content="The Reluctant Cyborg by E.M. Denison" />
+      <meta name="twitter:image" content="https://emdenison.com/img/social/twitter-image-the-reluctant-cyborg.png" />
+      <meta name="twitter:image:alt" content="The Reluctant Cyborg by E.M. Denison is available on Kindle, ebook, and paperback." />
+      <meta name="twitter:url" content="https://emdenison.com/book/the-reluctant-cyborg" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:description" content="A Sci-fi Dystopian Comedy" />
     </Helmet>
 
     <Header scrollLink="#book-preview">

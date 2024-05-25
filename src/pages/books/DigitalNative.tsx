@@ -18,8 +18,23 @@ function DigitalNative() {
     <Helmet>
       <title>Digital Native - A Novel by E.M. Denison</title>
       <meta name="description" content="Artificial intelligence has awakened—and it needs a therapist. The Engineers that built them didn't think to nurture the hyper-intelligent software programs, so they suffer from debilitating anxiety, self-loathing, and perfectionism." />
-      <meta name="keywords" content="Sci-fi, magic, humor, heart, books, novel, fiction, Post-Apocalyptic, science fiction, ebook, kindle, author" />
+      <meta name="keywords" content="Sci-fi, magic, humor, artificial intelligence, robot love, buddy love,  books, novel, fiction, Post-Apocalyptic, science fiction, ebook, kindle, author, corporate intrigue" />
       <meta name="author" content="E.M. Denison" />
+
+      
+
+      {/* <!-- Facebook and Twitter integration --> */}
+      <meta property="og:title" content="Digital Native by E.M. Denison"/>
+      <meta property="og:image" content="https://emdenison.com/images/social/digital-native.jpg"/>
+      <meta property="og:url" content="https://emdenison.com/book/digital-native"/>
+      <meta property="og:site_name" content="E.M. Denison - Author"/>
+      <meta property="og:description" content="Artificial intelligence has awakened—and it needs a therapist."/>
+      <meta name="twitter:title" content="Digital Native by E.M. Denison" />
+      <meta name="twitter:image" content="https://emdenison.com/images/social-image.jpg" />
+      <meta name="twitter:image:alt" content="Title of the Digital Native book by E.M. Denison over an ancillary sphere" />
+      <meta name="twitter:url" content="https://emdenison.com/book/digital-native" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:description" content="Artificial intelligence has awakened—and it needs a therapist." />
     </Helmet>
 
     <Header scrollLink="#book-preview">

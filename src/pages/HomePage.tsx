@@ -22,9 +22,22 @@ function HomePage() {
 
     <Helmet>
       <title>E.M. Denison - Author</title>
-      <meta name="description" content="Author website for E.M. Denison. Sci-fi, magic, humor, heart." />
-      <meta name="keywords" content="Sci-fi, magic, humor, heart, books, novel, fiction, Post-Apocalyptic, science fiction, ebook, kindle, author" />
+      <meta name="description" content="E.M. Denison, author of sci-fi, magic, humor, and heart." />
+      <meta name="keywords" content="Sci-fi, magic, humor, cyberpunk, dystopia, books, novel, fiction, Post-Apocalyptic, science fiction, ebook, kindle, author, fantasy, transhumanism, satire" />
       <meta name="author" content="E.M. Denison" />
+
+      {/* <!-- Facebook and Twitter integration --> */}
+      <meta property="og:title" content="E.M. Denison, Author"/>
+      <meta property="og:image" content="https://emdenison.com/img/social/facebook-image-emdenison.png"/>
+      <meta property="og:url" content="https://emdenison.com"/>
+      <meta property="og:site_name" content="E.M. Denison - Author"/>
+      <meta property="og:description" content="Sci-fi, magic, humor, heart"/>
+      <meta name="twitter:title" content="E.M. Denison, Author" />
+      <meta name="twitter:image" content="https://emdenison.com/img/social/twitter-image-emdenison.png" />
+      <meta name="twitter:image:alt" content="E.M. Denison. Sci-fi, magic, humor, heart. Image of a goofy killer robot." />
+      <meta name="twitter:url" content="https://emdenison.com" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:description" content="Sci-fi, magic, humor, heart" />
     </Helmet>
 
     <Header scrollLink="#books">
@@ -63,7 +76,7 @@ function HomePage() {
             <SectionTitle>About E.M. Denison</SectionTitle>
           </PageSectionHeader>
             <div className="mx-auto w-4/5 my-4">
-              <p className="pb-2">I grew up in Kansas and played a lot of trombone in high school and college. I studied geology in college and lived in a paleontology lab measuring the fungus holes in petrified Cretaceous wood and Devonian lungfish burrows. I have worked as an engineering geologist, a science journalist, and a medical grant writer. In 2010, I married the love of my life and we have three hilarious little kids.</p>
+              <p className="pb-2">E.M Denison is a sci-fi and fantasy author who favors satire and stories featuring spunky robots. She grew up in Kansas and played a lot of trombone in high school and college. She studied geology in college and lived in a paleontology lab measuring Devonian lungfish burrows and the fungus holes in Cretaceous wood. She has worked as an engineering geologist, a science journalist, and a medical grant writer. In 2010, She married the love of her  life, and they have three hilarious little kids and three ultra-needy cats.</p>
               <ButtonOutline href="https://www.goodreads.com/author/show/22379452.E_M_Denison" text="Follow on Goodreads" />
             </div>
         </PageSection>
