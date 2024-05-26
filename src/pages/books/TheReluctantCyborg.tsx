@@ -22,13 +22,13 @@ function TheReluctantCyborg() {
       {/* <!-- Facebook and Twitter integration --> */}
       <meta property="og:title" content="The Reluctant Cyborg by E.M. Denison"/>
       <meta property="og:image" content="https://emdenison.com/img/social/facebook-image-the-reluctant-cyborg.png"/>
-      <meta property="og:url" content="https://emdenison.com/book/the-reluctant-cyborg"/>
+      <meta property="og:url" content="https://emdenison.com/#/book/the-reluctant-cyborg"/>
       <meta property="og:site_name" content="E.M. Denison - Author"/>
       <meta property="og:description" content="A Sci-fi Dystopian Comedy"/>
       <meta name="twitter:title" content="The Reluctant Cyborg by E.M. Denison" />
       <meta name="twitter:image" content="https://emdenison.com/img/social/twitter-image-the-reluctant-cyborg.png" />
       <meta name="twitter:image:alt" content="The Reluctant Cyborg by E.M. Denison is available on Kindle, ebook, and paperback." />
-      <meta name="twitter:url" content="https://emdenison.com/book/the-reluctant-cyborg" />
+      <meta name="twitter:url" content="https://emdenison.com/#/book/the-reluctant-cyborg" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:description" content="A Sci-fi Dystopian Comedy" />
     </Helmet>
