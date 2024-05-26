@@ -31,16 +31,16 @@ export default {
         'reluctant-cyborg-bg': '#123456'
       }, 
       backgroundPosition: {
-        'top-1': 'center top -5rem',
+        'top-1': 'center top -2rem',
         'top-2': 'center top -8rem',
         'top-3': 'center top -13rem',
         'right-3': 'right -5rem top',
       },
       backgroundImage: {
       'hero-1': "url('/img/hero-1.jpg')",
-      'hero-2': "url('/img/hero-2.png')",
-      'hero-3': "url('/img/hero-3.png')",
-      'hero-EM': "url('/img/hero-EM.png')",
+      'hero-2': "url('/img/hero-2.jpg')",
+      'hero-3': "url('/img/hero-3.jpg')",
+      'hero-EM': "url('/img/hero-EM.jpg')",
       'background': "url('/img/background.png')",
       'hero-digital-native': "url('/img/hero-digital-native.jpg')",
       'hero-reluctant-cyborg': "url('/img/reluctant-cyborg-background.png')",

@@ -50,7 +50,7 @@ function HomePage() {
         <SectionTitleBooks>Books</SectionTitleBooks>
       </PageSectionHeaderBooks>
 
-      <div className="grid md:max-w-screen-md lg:max-w-screen-lg m-auto lg:grid-cols-2 justify-center">
+      <div className="grid w-4/5 m-auto md:max-w-screen-md lg:max-w-screen-lg lg:grid-cols-2 justify-center content-center align-center ">
       <BookCard imgSrc="/img/reluctant-cyborg-compound-books.png">
         <BookCardTitle>The Reluctant Cyborg</BookCardTitle>
         <BookCardSubTitle>A Sci-fi Dystopian Comedy</BookCardSubTitle>
