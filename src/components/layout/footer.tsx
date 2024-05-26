@@ -1,6 +1,8 @@
+import useScrollToTop from "../useScrollToTop"
 
 
 const Footer = () => {
+  useScrollToTop();
   return (
     <footer className={`mt-10 relative h-[530px] bg-brown-900 bg-footer-1 bg-no-repeat bg-cover bg-top lg:bg-top max-w-screen-xl m-auto transition-[background] duration-[90000ms] hover:bg-center lg:rounded-t-2xl`}>
       <div className="lg:backdrop-blur-xs h-full bg-brown-900/70 text-brown-50 w-full text-center lg:rounded-t-2xl">
