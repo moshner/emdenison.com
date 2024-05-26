@@ -15,7 +15,7 @@ const Header = ({ scrollLink, children }: PropsWithChildren<Props>) => {
 
   return (
     <>
-    <div className={`relative h-screen lg:h-96 bg-brown-900 bg-hero-1 bg-no-repeat bg-cover bg-top lg:bg-top-3 max-w-screen-xl m-auto transition-[background] duration-[90000ms] hover:bg-center lg:rounded-b-2xl`}>
+    <div className={`relative h-svh lg:h-96 bg-brown-900 bg-hero-1 bg-no-repeat bg-cover bg-top lg:bg-top-3 max-w-screen-xl m-auto transition-[background] duration-[90000ms] hover:bg-center lg:rounded-b-2xl`}>
       <TopNav />
       <div className="backdrop-blur-xs h-full bg-brown-900/80 content-center lg:rounded-b-2xl">
         {children}
