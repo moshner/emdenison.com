@@ -77,7 +77,7 @@ function HomePage() {
           </PageSectionHeader>
             <div className="mx-auto w-4/5 my-4">
               <p className="pb-2">E.M Denison is a sci-fi and fantasy author who favors satire and stories featuring spunky robots. She grew up in Kansas and played a lot of trombone in high school and college. She studied geology in college and lived in a paleontology lab measuring Devonian lungfish burrows and the fungus holes in Cretaceous wood. She has worked as an engineering geologist, a science journalist, and a medical grant writer. In 2010, She married the love of her  life, and they have three hilarious little kids and three ultra-needy cats.</p>
-              <ButtonOutline href="https://www.goodreads.com/author/show/22379452.E_M_Denison" text="Follow on Goodreads" />
+              <ButtonOutline href="https://www.facebook.com/people/Stories-by-E-M-Denison/61553634125657/" text="Follow on Facebook" />
             </div>
         </PageSection>
 
