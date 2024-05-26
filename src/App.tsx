@@ -1,12 +1,12 @@
 import HomePage from "./pages/HomePage";
 import {
-  createHashRouter,
+  createBrowserRouter,
   RouterProvider
 } from "react-router-dom";
 import TheReluctantCyborg from "./pages/books/TheReluctantCyborg";
 import DigitalNative from "./pages/books/DigitalNative";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />
