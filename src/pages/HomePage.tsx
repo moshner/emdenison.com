@@ -31,7 +31,7 @@ function HomePage() {
       <meta property="og:image" content="https://emdenison.com/img/social/facebook-image-emdenison.png"/>
       <meta property="og:url" content="https://emdenison.com"/>
       <meta property="og:site_name" content="E.M. Denison - Author"/>
-      <meta property="og:description" content="Sci-fi, magic, humor, heart"/>
+      <meta property="og:description" content="E.M. Denison writes speculative fiction with a bent toward satire and spunky robots."/>
       <meta name="twitter:title" content="E.M. Denison, Author" />
       <meta name="twitter:image" content="https://emdenison.com/img/social/twitter-image-emdenison.png" />
       <meta name="twitter:image:alt" content="E.M. Denison. Sci-fi, magic, humor, heart. Image of a goofy killer robot." />

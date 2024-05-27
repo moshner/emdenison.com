@@ -25,12 +25,12 @@ function DigitalNative() {
 
       {/* <!-- Facebook and Twitter integration --> */}
       <meta property="og:title" content="Digital Native by E.M. Denison"/>
-      <meta property="og:image" content="https://emdenison.com/images/social/digital-native.jpg"/>
+      <meta property="og:image" content="https://emdenison.com/img/social/digital-native.jpg"/>
       <meta property="og:url" content="https://emdenison.com/book/digital-native"/>
       <meta property="og:site_name" content="E.M. Denison - Author"/>
-      <meta property="og:description" content="E.M. Denison writes speculative fiction with a bent toward satire and spunky robots."/>
+      <meta property="og:description" content="Artificial intelligence has awakened—and it needs a therapist."/>
       <meta name="twitter:title" content="Digital Native by E.M. Denison" />
-      <meta name="twitter:image" content="https://emdenison.com/images/social-image.jpg" />
+      <meta name="twitter:image" content="https://emdenison.com/img/social-image.jpg" />
       <meta name="twitter:image:alt" content="Title of the Digital Native book by E.M. Denison over an ancillary sphere" />
       <meta name="twitter:url" content="https://emdenison.com/book/digital-native" />
       <meta name="twitter:card" content="summary_large_image" />
