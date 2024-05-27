@@ -102,8 +102,9 @@ function DigitalNative() {
     "name": paperbackStructuredData.name,
     "aggregateRating": {
       "@type": "AggregateRating",
-      "reviewValue": paperbackStructuredData.aggregateRating.ratingValue,
-      "ratingCount": paperbackStructuredData.aggregateRating.reviewCount
+      "ratingValue": paperbackStructuredData.aggregateRating.ratingValue,
+      "reviewCount": paperbackStructuredData.aggregateRating.reviewCount,
+      "bestRating": 5,
     },
     "keywords": paperbackStructuredData.keywords,
     "thumbnailUrl": paperbackStructuredData.thumbnailUrl,
