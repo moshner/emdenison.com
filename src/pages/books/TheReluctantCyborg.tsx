@@ -11,13 +11,61 @@ import { Helmet } from "react-helmet";
 import Footer from "../../components/layout/footer";
 
 function TheReluctantCyborg() {
+
+  const paperbackStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "isbn": "979-8990529205",
+    "numberOfPages": 407,
+    "abridged": false,
+    "bookFormat": "https://schema.org/Paperback",
+    "abstract": "A lighthearted dystopian sci-fi satire that reads like Upton Sinclair's The Jungle retold as a buddy love comedy between an irresponsible super cyborg and a judgmental medical robot.",
+    "author": "E.M. Denison",
+    "copyrightYear": "2024",
+    "datePublished": "2024-05-30",
+    "genre": "Science Fiction",
+    "name": "The Reluctant Cyborg",
+    "keywords": "Dystopian comedy,Buddy love,Evil robot,friendly robot,near future cyberpunk,sci-fi satire,post-apocalyptic,reluctant hero,surprise baby,friends to lovers,transhumanism,light-hearted comedy,Connie Willis,Jasper Fforde,John Scalzi,Douglas Adams,Terry Pratchett,working mom,war hero,Martha Wells,pop-culture references",
+    "thumbnailUrl": "../img/reluctant-cyborg-cover.jpg",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "price": "$17.99",
+      "priceCurrency": "USD"
+    },
+  }
+
+  const ebookStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "isbn": "979-8990529212",
+    "numberOfPages": paperbackStructuredData.numberOfPages,
+    "abridged": false,
+    "bookFormat": "https://schema.org/EBook",
+    "abstract": paperbackStructuredData.abstract,
+    "author": paperbackStructuredData.author,
+    "copyrightYear": paperbackStructuredData.copyrightYear,
+    "datePublished": paperbackStructuredData.datePublished,
+    "genre": paperbackStructuredData.genre,
+    "name": paperbackStructuredData.name,
+    "keywords": paperbackStructuredData.keywords,
+    "thumbnailUrl": paperbackStructuredData.thumbnailUrl,
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "price": "$5.99",
+      "priceCurrency": "USD"
+    },
+  }
+
+
   return (
   <>
     <Helmet>
       <title>The Reluctant Cyborg - A Novel by E.M. Denison</title>
-      <meta name="description" content="A lighthearted dystopian sci-fi satire that reads like Upton Sinclair's The Jungle retold as a buddy love comedy between an irresponsible super cyborg and a judgmental medical robot." />
-      <meta name="keywords" content="Dystopian comedy,Buddy love,Evil robot,friendly robot,near future cyberpunk,sci-fi satire,post-apocalyptic,reluctant hero,surprise baby,friends to lovers,transhumanism,light-hearted comedy,Connie Willis,Jasper Fforde,John Scalzi,Douglas Adams,Terry Pratchett,working mom,war hero,Martha Wells,pop-culture references" />
-      <meta name="author" content="E.M. Denison" />      
+      <meta name="description" content={paperbackStructuredData.abstract} />
+      <meta name="keywords" content={paperbackStructuredData.keywords} />
+      <meta name="author" content={paperbackStructuredData.author} />      
 
       {/* <!-- Facebook and Twitter integration --> */}
       <meta property="og:title" content="The Reluctant Cyborg by E.M. Denison"/>
@@ -31,6 +79,19 @@ function TheReluctantCyborg() {
       <meta name="twitter:url" content="https://emdenison.com/book/the-reluctant-cyborg" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:description" content="A Sci-fi Dystopian Comedy" />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(paperbackStructuredData),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(ebookStructuredData),
+        }}
+      />
     </Helmet>
 
     <Header scrollLink="#book-preview">
@@ -42,20 +103,20 @@ function TheReluctantCyborg() {
       <BookAside imgSrc="../img/reluctant-cyborg-compound-books.png" alt="Image of Digital Native in 3d">
         <div className="grid grid-cols-2 mb-5">
           <div className="relative">
-            <BookPrice screenReader="Amazon Price" price="$5.99" bgColor="bg-orange-400" />
+            <BookPrice screenReader="Amazon Price" price={ebookStructuredData.offers.price} bgColor="bg-orange-400" />
             <BookButton className="mt-6 ml-3" href="https://www.amazon.com/dp/B0D3YKH76X" color="bg-black" text="Buy an eBook" />
           </div>
           <div className="relative">
-            <BookPrice screenReader="Amazon Price" price="$17.99" bgColor="bg-orange-400" />
+            <BookPrice screenReader="Amazon Price" price={paperbackStructuredData.offers.price} bgColor="bg-orange-400" />
             <BookButton className="mt-6 ml-3" href="https://a.co/d/61niJFB" color="bg-black" text="Buy a Paperback" />
           </div>
         </div>
         {/* <div className="mb-3">
           <Stars rating={4.5} /><span className="pl-3">4.5 stars on Amazon!</span>
         </div> */}
-        <BodyCopy className="mb-1">ISBN-13 (ebook): 979-8990529212</BodyCopy>
-        <BodyCopy className="mb-1">ISBN-13 (paperback): 979-8990529205</BodyCopy>
-        <BodyCopy className="mb-1">Length: 407 pages</BodyCopy>
+        <BodyCopy className="mb-1">ISBN-13 (ebook): {ebookStructuredData.isbn}</BodyCopy>
+        <BodyCopy className="mb-1">ISBN-13 (paperback): {paperbackStructuredData.isbn}</BodyCopy>
+        <BodyCopy className="mb-1">Length: {paperbackStructuredData.numberOfPages} pages</BodyCopy>
         <BodyCopy className="mb-1">Dimensions: 6x9 inches</BodyCopy>
       </BookAside>
       <div className="mt-10 md:mt-0">
@@ -68,14 +129,14 @@ function TheReluctantCyborg() {
 
     <div className="mt-20 mx-5 max-w-screen-lg lg:mx-auto">
       <BookH2 font="font-reluctant-cyborg-sans tracking-tight italic">Preview of Chapter 1</BookH2>
-      <BookAside imgSrc="../img/reluctant-cyborg-cover.jpg" alt="Full cover of The Reluctant Cyborg">
+      <BookAside imgSrc={paperbackStructuredData.thumbnailUrl} alt="Full cover of The Reluctant Cyborg">
         <div className="grid grid-cols-2 mt-5">
           <div className="relative">
-            <BookPrice screenReader="Amazon Price" price="$5.99" bgColor="bg-orange-400" />
+            <BookPrice screenReader="Amazon Price" price={ebookStructuredData.offers.price} bgColor="bg-orange-400" />
             <BookButton className="mt-6 ml-3" href="https://www.amazon.com/dp/B0D3YKH76X" color="bg-black" text="Buy an eBook" />
           </div>
           <div className="relative">
-            <BookPrice screenReader="Amazon Price" price="$17.99" bgColor="bg-orange-400" />
+            <BookPrice screenReader="Amazon Price" price={paperbackStructuredData.offers.price} bgColor="bg-orange-400" />
             <BookButton className="mt-6 ml-3" href="https://a.co/d/61niJFB" color="bg-black" text="Buy a Paperback" />
           </div>
         </div>

@@ -13,15 +13,98 @@ import {Helmet} from "react-helmet";
 import Footer from "../../components/layout/footer";
 
 function DigitalNative() {
+
+  const paperbackStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "isbn": "979-8771057200",
+    "numberOfPages": 235,
+    "abridged": false,
+    "bookFormat": "https://schema.org/Paperback",
+    "abstract": "Artificial intelligence has awakened—and it needs a therapist. The Engineers that built them didn't think to nurture the hyper-intelligent software programs, so they suffer from debilitating anxiety, self-loathing, and perfectionism.",
+    "author": "E.M. Denison",
+    "copyrightYear": "2021",
+    "datePublished": "2021-11-21",
+    "genre": "Science Fiction",
+    "name": "Digital Native",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "reviewValue": 4.5,
+      "ratingCount": 16
+    },
+    "keywords": "Sci-fi, magic, humor, artificial intelligence, robot love, buddy love,  books, novel, fiction, Post-Apocalyptic, science fiction, ebook, kindle, author, corporate intrigue",
+    "thumbnailUrl": "../img/digital-native-cover.jpg",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "price": "$14.99",
+      "priceCurrency": "USD"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": "Lydia",
+        "datePublished": "2021-12-10",
+        "reviewBody": "Thoroughly enjoyed the story and the rich details that brought it to life in my mind. A very thought provoking concept of our future being lived almost exclusively in virtual environments, as well as how we might interact with AI.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5
+        }
+      },{
+        "@type": "Review",
+        "author": "Ryan Edel",
+        "datePublished": "2021-11-30",
+        "reviewBody": "Digital Native is a really good read for anyone who enjoys a combination of AI, corporate espionage, and redemption.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5
+        }
+      },{
+        "@type": "Review",
+        "author": "Kassia",
+        "datePublished": "2021-11-21",
+        "reviewBody": "Once I started it, I couldn't put it down. Very engaging characters and a unique perspective. A great look into a possible future of AI becoming sentient in a way that is rooted in what makes humanity good or bad..",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5
+        }
+      },],
+  }
+
+  const ebookStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "numberOfPages": paperbackStructuredData.numberOfPages,
+    "abridged": false,
+    "bookFormat": "https://schema.org/EBook",
+    "abstract": paperbackStructuredData.abstract,
+    "author": paperbackStructuredData.author,
+    "copyrightYear": paperbackStructuredData.copyrightYear,
+    "datePublished": paperbackStructuredData.datePublished,
+    "genre": paperbackStructuredData.genre,
+    "name": paperbackStructuredData.name,
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "reviewValue": paperbackStructuredData.aggregateRating.reviewValue,
+      "ratingCount": paperbackStructuredData.aggregateRating.ratingCount
+    },
+    "keywords": paperbackStructuredData.keywords,
+    "thumbnailUrl": paperbackStructuredData.thumbnailUrl,
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "price": "$14.99",
+      "priceCurrency": "USD"
+    },
+  }
+
   return (
   <>
     <Helmet>
       <title>Digital Native - A Novel by E.M. Denison</title>
-      <meta name="description" content="Artificial intelligence has awakened—and it needs a therapist. The Engineers that built them didn't think to nurture the hyper-intelligent software programs, so they suffer from debilitating anxiety, self-loathing, and perfectionism." />
-      <meta name="keywords" content="Sci-fi, magic, humor, artificial intelligence, robot love, buddy love,  books, novel, fiction, Post-Apocalyptic, science fiction, ebook, kindle, author, corporate intrigue" />
-      <meta name="author" content="E.M. Denison" />
-
-      
+      <meta name="description" content={paperbackStructuredData.abstract} />
+      <meta name="keywords" content={paperbackStructuredData.keywords} />
+      <meta name="author" content={paperbackStructuredData.author} />
 
       {/* <!-- Facebook and Twitter integration --> */}
       <meta property="og:title" content="Digital Native by E.M. Denison"/>
@@ -35,6 +118,20 @@ function DigitalNative() {
       <meta name="twitter:url" content="https://emdenison.com/book/digital-native" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:description" content="Artificial intelligence has awakened—and it needs a therapist." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(paperbackStructuredData),
+        }}
+      />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(ebookStructuredData),
+          }}
+      />
+      
     </Helmet>
 
     <Header scrollLink="#book-preview">
@@ -46,19 +143,19 @@ function DigitalNative() {
       <BookAside imgSrc="../img/digital-native-compound-books.png" alt="Image of Digital Native in 3d">
         <div className="grid grid-cols-2 mb-5">
           <div className="relative">
-            <BookPrice screenReader="Amazon Price" price="$3.99" />
+            <BookPrice screenReader="Amazon Price" price={ebookStructuredData.offers.price} />
             <BookButton className="mt-6 ml-3" href="https://www.amazon.com/Digital-Native-M-Denison-ebook/dp/B09MBRFYXC/" color="bg-black" text="Buy an eBook" />
           </div>
           <div className="relative">
-            <BookPrice screenReader="Amazon Price" price="$14.99" />
+            <BookPrice screenReader="Amazon Price" price={paperbackStructuredData.offers.price} />
             <BookButton className="mt-6 ml-3" href="https://www.amazon.com/Digital-Native-M-Denison/dp/B09M5CZQ9X/" color="bg-black" text="Buy a Paperback" />
           </div>
         </div>
         <div className="mb-3">
-          <Stars rating={4.5} /><span className="pl-3">4.5 stars on Amazon!</span>
+          <Stars rating={paperbackStructuredData.aggregateRating.reviewValue} /><span className="pl-3">{paperbackStructuredData.aggregateRating.reviewValue} stars on Amazon!</span>
         </div>
-        <BodyCopy className="mb-1">ISBN-13: 979-8771057200</BodyCopy>
-        <BodyCopy className="mb-1">Length: 235 pages</BodyCopy>
+        <BodyCopy className="mb-1">ISBN-13: {paperbackStructuredData.isbn}</BodyCopy>
+        <BodyCopy className="mb-1">Length: {paperbackStructuredData.numberOfPages} pages</BodyCopy>
         <BodyCopy className="mb-1">Dimensions: 6x9 inches</BodyCopy>
       </BookAside>
       <div className="mt-10 md:mt-0">
@@ -72,14 +169,14 @@ function DigitalNative() {
 
     <div className="md:grid md:grid-cols-3 md:gap-x-10 mt-20 mx-5">
       <BookH2>Reviews for Digital Native</BookH2>
-      <Review className="mb-6" stars={5} cite="Lydia">Thoroughly enjoyed the story and the rich details that brought it to life in my mind. A very thought provoking concept of our future being lived almost exclusively in virtual environments, as well as how we might interact with AI.</Review>
-      <Review className="mb-6" stars={5} cite="Ryan Edel">Digital Native is a really good read for anyone who enjoys a combination of AI, corporate espionage, and redemption.</Review>
-      <Review className="mb-6" stars={5} cite="Kassia">Once I started it, I couldn't put it down. Very engaging characters and a unique perspective. A great look into a possible future of AI becoming sentient in a way that is rooted in what makes humanity good or bad..</Review>
+      <Review className="mb-6" stars={paperbackStructuredData.review[0].reviewRating.ratingValue} cite={paperbackStructuredData.review[0].author}>{paperbackStructuredData.review[0].reviewBody}</Review>
+      <Review className="mb-6" stars={paperbackStructuredData.review[1].reviewRating.ratingValue} cite={paperbackStructuredData.review[1].author}>{paperbackStructuredData.review[1].reviewBody}</Review>
+      <Review className="mb-6" stars={paperbackStructuredData.review[2].reviewRating.ratingValue} cite={paperbackStructuredData.review[2].author}>{paperbackStructuredData.review[2].reviewBody}</Review>
     </div>
 
     <div className="mt-20 mx-5 max-w-screen-lg lg:mx-auto">
       <BookH2>Preview of Chapter 1</BookH2>
-      <BookAside imgSrc="../img/digital-native-cover.jpg" alt="Full cover of Digital Native that has a robot hand shaking the hand of a human in a business suit">
+      <BookAside imgSrc={paperbackStructuredData.thumbnailUrl} alt="Full cover of Digital Native that has a robot hand shaking the hand of a human in a business suit">
         <div className="grid grid-cols-2 mt-5">
           <div className="relative">
             <BookPrice screenReader="Amazon Price" price="$3.99" />

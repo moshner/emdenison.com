@@ -17,6 +17,17 @@ import {Helmet} from "react-helmet";
 import Footer from "../components/layout/footer";
 
 function HomePage() {
+
+  const authorStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "image": "../img/EM-BW.jpg",
+    "jobTitle": "Author",
+    "name": "E.M. Denison",
+    "url": "https://emdenison.com",
+    "description": "E.M Denison is a sci-fi and fantasy author who favors satire and stories featuring spunky robots. She grew up in Kansas and played a lot of trombone in high school and college. She studied geology in college and lived in a paleontology lab measuring Devonian lungfish burrows and the fungus holes in Cretaceous wood. She has worked as an engineering geologist, a science journalist, and a medical grant writer. In 2010, She married the love of her  life, and they have three hilarious little kids and three ultra-needy cats.",
+  }
+
   return (
   <>
 
@@ -38,6 +49,13 @@ function HomePage() {
       <meta name="twitter:url" content="https://emdenison.com" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:description" content="Sci-fi, magic, humor, heart" />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(authorStructuredData),
+        }}
+      />
     </Helmet>
 
     <Header scrollLink="#books">
@@ -76,7 +94,7 @@ function HomePage() {
             <SectionTitle>About E.M. Denison</SectionTitle>
           </PageSectionHeader>
             <div className="mx-auto w-4/5 my-4">
-              <p className="pb-2">E.M Denison is a sci-fi and fantasy author who favors satire and stories featuring spunky robots. She grew up in Kansas and played a lot of trombone in high school and college. She studied geology in college and lived in a paleontology lab measuring Devonian lungfish burrows and the fungus holes in Cretaceous wood. She has worked as an engineering geologist, a science journalist, and a medical grant writer. In 2010, She married the love of her  life, and they have three hilarious little kids and three ultra-needy cats.</p>
+              <p className="pb-2">{authorStructuredData.description}</p>
               <ButtonOutline href="https://www.facebook.com/people/Stories-by-E-M-Denison/61553634125657/" text="Follow on Facebook" />
             </div>
         </PageSection>
