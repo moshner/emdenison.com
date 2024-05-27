@@ -22,7 +22,12 @@ function DigitalNative() {
     "abridged": false,
     "bookFormat": "https://schema.org/Paperback",
     "abstract": "Artificial intelligence has awakened—and it needs a therapist. The Engineers that built them didn't think to nurture the hyper-intelligent software programs, so they suffer from debilitating anxiety, self-loathing, and perfectionism.",
-    "author": "E.M. Denison",
+    "author": {
+      "@type": "Person",
+      "name": "E.M. Denison",
+      "jobTitle": "Author",
+      "url": "https://emdenison.com"
+    },
     "copyrightYear": "2021",
     "datePublished": "2021-11-21",
     "genre": "Science Fiction",
@@ -69,6 +74,10 @@ function DigitalNative() {
           "ratingValue": 5
         }
       },],
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://emdenison.com/book/digital-native"
+      }
   }
 
   const ebookStructuredData = {
@@ -78,7 +87,12 @@ function DigitalNative() {
     "abridged": false,
     "bookFormat": "https://schema.org/EBook",
     "abstract": paperbackStructuredData.abstract,
-    "author": paperbackStructuredData.author,
+    "author": {
+      "@type": "Person",
+      "name": "E.M. Denison",
+      "jobTitle": "Author",
+      "url": "https://emdenison.com"
+    },
     "copyrightYear": paperbackStructuredData.copyrightYear,
     "datePublished": paperbackStructuredData.datePublished,
     "genre": paperbackStructuredData.genre,
@@ -104,7 +118,7 @@ function DigitalNative() {
       <title>Digital Native - A Novel by E.M. Denison</title>
       <meta name="description" content={paperbackStructuredData.abstract} />
       <meta name="keywords" content={paperbackStructuredData.keywords} />
-      <meta name="author" content={paperbackStructuredData.author} />
+      <meta name="author" content={paperbackStructuredData.author.name} />
 
       {/* <!-- Facebook and Twitter integration --> */}
       <meta property="og:title" content="Digital Native by E.M. Denison"/>
@@ -120,7 +134,7 @@ function DigitalNative() {
       <meta name="twitter:description" content="Artificial intelligence has awakened—and it needs a therapist." />
 
       </Helmet>
-      
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

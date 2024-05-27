@@ -20,7 +20,12 @@ function TheReluctantCyborg() {
     "abridged": false,
     "bookFormat": "https://schema.org/Paperback",
     "abstract": "A lighthearted dystopian sci-fi satire that reads like Upton Sinclair's The Jungle retold as a buddy love comedy between an irresponsible super cyborg and a judgmental medical robot.",
-    "author": "E.M. Denison",
+    "author": {
+      "@type": "Person",
+      "name": "E.M. Denison",
+      "jobTitle": "Author",
+      "url": "https://emdenison.com"
+    },
     "copyrightYear": "2024",
     "datePublished": "2024-05-30",
     "genre": "Science Fiction",
@@ -33,6 +38,10 @@ function TheReluctantCyborg() {
       "price": "$17.99",
       "priceCurrency": "USD"
     },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://emdenison.com/book/the-reluctant-cyborg"
+    }
   }
 
   const ebookStructuredData = {
@@ -43,7 +52,12 @@ function TheReluctantCyborg() {
     "abridged": false,
     "bookFormat": "https://schema.org/EBook",
     "abstract": paperbackStructuredData.abstract,
-    "author": paperbackStructuredData.author,
+    "author": {
+      "@type": "Person",
+      "name": "E.M. Denison",
+      "jobTitle": "Author",
+      "url": "https://emdenison.com"
+    },
     "copyrightYear": paperbackStructuredData.copyrightYear,
     "datePublished": paperbackStructuredData.datePublished,
     "genre": paperbackStructuredData.genre,
@@ -65,7 +79,7 @@ function TheReluctantCyborg() {
       <title>The Reluctant Cyborg - A Novel by E.M. Denison</title>
       <meta name="description" content={paperbackStructuredData.abstract} />
       <meta name="keywords" content={paperbackStructuredData.keywords} />
-      <meta name="author" content={paperbackStructuredData.author} />      
+      <meta name="author" content={paperbackStructuredData.author.name} />      
 
       {/* <!-- Facebook and Twitter integration --> */}
       <meta property="og:title" content="The Reluctant Cyborg by E.M. Denison"/>
@@ -81,7 +95,7 @@ function TheReluctantCyborg() {
       <meta name="twitter:description" content="A Sci-fi Dystopian Comedy" />
 
       </Helmet>
-      
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
