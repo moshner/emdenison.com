@@ -80,6 +80,8 @@ function TheReluctantCyborg() {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:description" content="A Sci-fi Dystopian Comedy" />
 
+      </Helmet>
+      
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -92,7 +94,6 @@ function TheReluctantCyborg() {
           __html: JSON.stringify(ebookStructuredData),
         }}
       />
-    </Helmet>
 
     <Header scrollLink="#book-preview">
       <HeaderTitle>The Reluctant Cyborg</HeaderTitle>

@@ -50,13 +50,14 @@ function HomePage() {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:description" content="Sci-fi, magic, humor, heart" />
 
+    </Helmet>
+    
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(authorStructuredData),
         }}
       />
-    </Helmet>
 
     <Header scrollLink="#books">
       <HeaderTitle>E.M. Denison</HeaderTitle>

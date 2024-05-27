@@ -119,6 +119,8 @@ function DigitalNative() {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:description" content="Artificial intelligence has awakened—and it needs a therapist." />
 
+      </Helmet>
+      
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -132,7 +134,6 @@ function DigitalNative() {
           }}
       />
       
-    </Helmet>
 
     <Header scrollLink="#book-preview">
       <HeaderTitle>Digital Native</HeaderTitle>
