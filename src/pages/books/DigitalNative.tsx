@@ -35,8 +35,9 @@ function DigitalNative() {
     "name": "Digital Native",
     "aggregateRating": {
       "@type": "AggregateRating",
-      "reviewValue": 4.5,
-      "ratingCount": 16
+      "ratingValue": 4.5,
+      "reviewCount": 16,
+      "bestRating": 5,
     },
     "keywords": "Sci-fi, magic, humor, artificial intelligence, robot love, buddy love,  books, novel, fiction, Post-Apocalyptic, science fiction, ebook, kindle, author, corporate intrigue",
     "thumbnailUrl": "../img/digital-native-cover.jpg",
@@ -101,8 +102,8 @@ function DigitalNative() {
     "name": paperbackStructuredData.name,
     "aggregateRating": {
       "@type": "AggregateRating",
-      "reviewValue": paperbackStructuredData.aggregateRating.reviewValue,
-      "ratingCount": paperbackStructuredData.aggregateRating.ratingCount
+      "reviewValue": paperbackStructuredData.aggregateRating.ratingValue,
+      "ratingCount": paperbackStructuredData.aggregateRating.reviewCount
     },
     "keywords": paperbackStructuredData.keywords,
     "thumbnailUrl": paperbackStructuredData.thumbnailUrl,
@@ -169,7 +170,7 @@ function DigitalNative() {
           </div>
         </div>
         <div className="mb-3">
-          <Stars rating={paperbackStructuredData.aggregateRating.reviewValue} /><span className="pl-3">{paperbackStructuredData.aggregateRating.reviewValue} stars on Amazon!</span>
+          <Stars rating={paperbackStructuredData.aggregateRating.ratingValue} /><span className="pl-3">{paperbackStructuredData.aggregateRating.ratingValue} stars on Amazon!</span>
         </div>
         <BodyCopy className="mb-1">ISBN-13: {paperbackStructuredData.isbn}</BodyCopy>
         <BodyCopy className="mb-1">Length: {paperbackStructuredData.numberOfPages} pages</BodyCopy>
