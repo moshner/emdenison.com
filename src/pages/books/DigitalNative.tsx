@@ -18,6 +18,7 @@ function DigitalNative() {
     "@context": "https://schema.org",
     "@type": "Book",
     "isbn": "979-8771057200",
+    "asin": "B09M5CZQ9X",
     "numberOfPages": 235,
     "abridged": false,
     "bookFormat": "https://schema.org/Paperback",
@@ -83,6 +84,7 @@ function DigitalNative() {
   const ebookStructuredData = {
     "@context": "https://schema.org",
     "@type": "Book",
+    "asin": "B09MBRFYXC",
     "numberOfPages": paperbackStructuredData.numberOfPages,
     "abridged": false,
     "bookFormat": "https://schema.org/EBook",

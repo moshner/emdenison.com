@@ -48,6 +48,7 @@ function TheReluctantCyborg() {
     "@context": "https://schema.org",
     "@type": "Book",
     "isbn": "979-8990529212",
+    "asin": "B0D3YKH76X",
     "numberOfPages": paperbackStructuredData.numberOfPages,
     "abridged": false,
     "bookFormat": "https://schema.org/EBook",
