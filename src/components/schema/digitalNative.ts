@@ -1,82 +1,83 @@
-
+import Book from "../../data/digitalNative";
+import Author from "../../data/author";
 
 const paperbackStructuredData = {
     "@context": "https://schema.org",
     "@type": "Book",
     "additionalType": "Product",
-    "isbn": "979-8771057200",
-    "numberOfPages": 235,
-    "size": "6x9 inches",
-    "bookFormat": "Paperback",
-    "abstract": "Artificial intelligence has awakened—and it needs a therapist. The Engineers that built them didn't think to nurture the hyper-intelligent software programs, so they suffer from debilitating anxiety, self-loathing, and perfectionism.",
+    "isbn": Book.formats.paperback.isbn,
+    "numberOfPages": Book.numberOfPages,
+    "size": Book.size,
+    "bookFormat": Book.formats.paperback.format,
+    "abstract": Book.abstract,
     "author": {
       "@type": "Person",
-      "name": "E.M. Denison",
-      "jobTitle": "Author",
-      "url": "https://emdenison.com"
+      "name": Author.name,
+      "jobTitle": Author.jobTitle,
+      "url": Author.url
     },
-    "copyrightYear": "2021",
-    "datePublished": "2021-11-21",
-    "genre": "Science Fiction",
-    "name": "Digital Native",
+    "copyrightYear": Book.copyrightYear,
+    "datePublished": Book.datePublished,
+    "genre": Book.genre,
+    "name": Book.title,
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": 4.5,
-      "reviewCount": 16,
-      "bestRating": 5,
+      "ratingValue": Book.aggregateRating.ratingValue,
+      "reviewCount": Book.aggregateRating.reviewCount,
+      "bestRating": Book.aggregateRating.bestRating,
     },
-    "keywords": "Sci-fi, magic, humor, artificial intelligence, robot love, buddy love,  books, novel, fiction, Post-Apocalyptic, science fiction, ebook, kindle, author, corporate intrigue",
-    "thumbnailUrl": "../img/digital-native-cover.jpg",
+    "keywords": Book.keywords,
+    "thumbnailUrl": Book.images.thumbnailImg.url,
     "offers": {
       "@type": "Offer",
-      "asin": "B09M5CZQ9X",
+      "asin": Book.formats.paperback.asin,
       "availability": "https://schema.org/InStock",
-      "price": "$14.99",
-      "priceCurrency": "USD",
-      "seller": "Amazon",
-      "hasGS1DigitalLink": "https://www.amazon.com/Digital-Native-M-Denison/dp/B09M5CZQ9X/",
+      "price": Book.formats.paperback.price,
+      "priceCurrency": Book.formats.paperback.priceCurrency,
+      "seller": Book.formats.paperback.seller,
+      "hasGS1DigitalLink": Book.formats.paperback.sellerURL,
     },
     "review": [
       {
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Lydia"
+          "name": Book.reviews[0].author
         },
-        "datePublished": "2021-12-10",
-        "reviewBody": "Thoroughly enjoyed the story and the rich details that brought it to life in my mind. A very thought provoking concept of our future being lived almost exclusively in virtual environments, as well as how we might interact with AI.",
+        "datePublished": Book.reviews[0].datePublished,
+        "reviewBody": Book.reviews[0].reviewBody,
         "reviewRating": {
           "@type": "Rating",
-          "ratingValue": 5
+          "ratingValue": Book.reviews[0].reviewRating.ratingValue
         }
       },{
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Ryan Edel"
+          "name": Book.reviews[1].author
         },
-        "datePublished": "2021-11-30",
-        "reviewBody": "Digital Native is a really good read for anyone who enjoys a combination of AI, corporate espionage, and redemption.",
+        "datePublished": Book.reviews[1].datePublished,
+        "reviewBody": Book.reviews[1].reviewBody,
         "reviewRating": {
           "@type": "Rating",
-          "ratingValue": 5
+          "ratingValue": Book.reviews[1].reviewRating.ratingValue
         }
       },{
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Kassia"
+          "name": Book.reviews[2].author
         },
-        "datePublished": "2021-11-21",
-        "reviewBody": "Once I started it, I couldn't put it down. Very engaging characters and a unique perspective. A great look into a possible future of AI becoming sentient in a way that is rooted in what makes humanity good or bad..",
+        "datePublished": Book.reviews[2].datePublished,
+        "reviewBody": Book.reviews[2].reviewBody,
         "reviewRating": {
           "@type": "Rating",
-          "ratingValue": 5
+          "ratingValue": Book.reviews[2].reviewRating.ratingValue
         }
       },],
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://emdenison.com/book/digital-native"
+          "@id": Book.url
       }
   }
 
@@ -84,36 +85,81 @@ const paperbackStructuredData = {
     "@context": "https://schema.org",
     "@type": "Book",
     "additionalType": "Product",
-    "numberOfPages": paperbackStructuredData.numberOfPages,
-    "bookFormat": "EBook",
-    "abstract": paperbackStructuredData.abstract,
+    "numberOfPages": Book.numberOfPages,
+    "size": Book.size,
+    "bookFormat": Book.formats.ebook.format,
+    "abstract": Book.abstract,
     "author": {
       "@type": "Person",
-      "name": "E.M. Denison",
-      "jobTitle": "Author",
-      "url": "https://emdenison.com"
+      "name": Author.name,
+      "jobTitle": Author.jobTitle,
+      "url": Author.url
     },
-    "copyrightYear": paperbackStructuredData.copyrightYear,
-    "datePublished": paperbackStructuredData.datePublished,
-    "genre": paperbackStructuredData.genre,
-    "name": paperbackStructuredData.name,
+    "copyrightYear": Book.copyrightYear,
+    "datePublished": Book.datePublished,
+    "genre": Book.genre,
+    "name": Book.title,
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": paperbackStructuredData.aggregateRating.ratingValue,
-      "reviewCount": paperbackStructuredData.aggregateRating.reviewCount,
-      "bestRating": 5,
+      "ratingValue": Book.aggregateRating.ratingValue,
+      "reviewCount": Book.aggregateRating.reviewCount,
+      "bestRating": Book.aggregateRating.bestRating,
     },
-    "keywords": paperbackStructuredData.keywords,
-    "thumbnailUrl": paperbackStructuredData.thumbnailUrl,
+    "keywords": Book.keywords,
+    "thumbnailUrl": Book.images.thumbnailImg.url,
     "offers": {
       "@type": "Offer",
-      "asin": "B09MBRFYXC",
-      "seller": "Amazon",
+      "asin": Book.formats.ebook.asin,
       "availability": "https://schema.org/InStock",
-      "price": "$3.99",
-      "priceCurrency": "USD",
-      "hasGS1DigitalLink": "https://www.amazon.com/Digital-Native-M-Denison-ebook/dp/B09MBRFYXC/",
+      "price": Book.formats.ebook.price,
+      "priceCurrency": Book.formats.ebook.priceCurrency,
+      "seller": Book.formats.ebook.seller,
+      "hasGS1DigitalLink": Book.formats.ebook.sellerURL,
     },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": Book.reviews[0].author
+        },
+        "datePublished": Book.reviews[0].datePublished,
+        "reviewBody": Book.reviews[0].reviewBody,
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": Book.reviews[0].reviewRating.ratingValue
+        }
+      },{
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": Book.reviews[1].author
+        },
+        "datePublished": Book.reviews[1].datePublished,
+        "reviewBody": Book.reviews[1].reviewBody,
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": Book.reviews[1].reviewRating.ratingValue
+        }
+      },{
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": Book.reviews[2].author
+        },
+        "datePublished": Book.reviews[2].datePublished,
+        "reviewBody": Book.reviews[2].reviewBody,
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": Book.reviews[2].reviewRating.ratingValue
+        }
+      },
+    ],
+  "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": Book.url
   }
+}
+  
 
   export default {paperbackStructuredData, ebookStructuredData}
