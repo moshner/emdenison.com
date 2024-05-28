@@ -110,7 +110,7 @@ const paperbackStructuredData = {
       "asin": "B09MBRFYXC",
       "seller": "Amazon",
       "availability": "https://schema.org/InStock",
-      "price": "$14.99",
+      "price": "$3.99",
       "priceCurrency": "USD",
       "hasGS1DigitalLink": "https://www.amazon.com/Digital-Native-M-Denison-ebook/dp/B09MBRFYXC/",
     },
