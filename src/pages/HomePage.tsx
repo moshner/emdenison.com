@@ -11,27 +11,15 @@ import BookButton from "../components/book-card/BookButton";
 import BookCardTitle from "../components/book-card/BookCardTitle";
 import BookCardSubTitle from "../components/book-card/BookCardSubTitle";
 import BookCardText from "../components/book-card/BookCardText";
-import NewsletterCard from "../components/newsletter";
+import NewsletterCard from "../components/Newsletter";
 import ButtonOutline from "../components/ButtonOutline";
 import {Helmet} from "react-helmet";
 import Footer from "../components/layout/footer";
+import authorStructuredData from "../components/schema/authorStructuredData";
+import theReluctantCyborg from "../components/schema/theReluctantCyborg";
+import digitalNative from "../components/schema/digitalNative";
 
 function HomePage() {
-
-  const authorStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "image": "../img/EM-BW.jpg",
-    "jobTitle": "Author",
-    "name": "E.M. Denison",
-    "url": "https://emdenison.com",
-    "description": "E.M Denison is a sci-fi and fantasy author who favors satire and stories featuring spunky robots. She grew up in Kansas and played a lot of trombone in high school and college. She studied geology in college and lived in a paleontology lab measuring Devonian lungfish burrows and the fungus holes in Cretaceous wood. She has worked as an engineering geologist, a science journalist, and a medical grant writer. In 2010, She married the love of her  life, and they have three hilarious little kids and three ultra-needy cats.",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://emdenison.com/"
-    }
-  }
-
   return (
   <>
 
@@ -75,14 +63,14 @@ function HomePage() {
 
       <div className="grid w-4/5 m-auto md:max-w-screen-md lg:max-w-screen-lg lg:grid-cols-2 justify-center content-center align-center ">
       <BookCard imgSrc="/img/reluctant-cyborg-compound-books.png">
-        <BookCardTitle>The Reluctant Cyborg</BookCardTitle>
-        <BookCardSubTitle>A Sci-fi Dystopian Comedy</BookCardSubTitle>
+        <BookCardTitle>{theReluctantCyborg.paperbackStructuredData.name}</BookCardTitle>
+        <BookCardSubTitle>{theReluctantCyborg.paperbackStructuredData.alternativeHeadline}</BookCardSubTitle>
         <BookCardText>A city's fate rests on its shruggiest pair of shoulders</BookCardText>
         <BookButton text="More Cyborgs" href="/book/the-reluctant-cyborg" color="bg-orange-700" />
       </BookCard>
       
       <BookCard imgSrc="/img/digital-native-compound-books.png">
-        <BookCardTitle>Digital Native</BookCardTitle>
+        <BookCardTitle>{digitalNative.paperbackStructuredData.name}</BookCardTitle>
         <BookCardText>Artificial intelligence has awakened—and it needs a therapist</BookCardText>
         <BookButton text="More AI" href="/book/digital-native" color="bg-teal" />
       </BookCard>

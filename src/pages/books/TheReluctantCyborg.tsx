@@ -9,131 +9,70 @@ import BookAside from "../../components/BookAside";
 import BookH2 from "../../components/BookH2";
 import { Helmet } from "react-helmet";
 import Footer from "../../components/layout/footer";
+import theReluctantCyborg from "../../components/schema/theReluctantCyborg";
+
 
 function TheReluctantCyborg() {
-
-  const paperbackStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "Book",
-    "isbn": "979-8990529205",
-    "numberOfPages": 407,
-    "bookFormat": "Paperback",
-    "abstract": "A lighthearted dystopian sci-fi satire that reads like Upton Sinclair's The Jungle retold as a buddy love comedy between an irresponsible super cyborg and a judgmental medical robot.",
-    "author": {
-      "@type": "Person",
-      "name": "E.M. Denison",
-      "jobTitle": "Author",
-      "url": "https://emdenison.com",
-      "seller": "Amazon",
-    },
-    "copyrightYear": "2024",
-    "datePublished": "2024-05-30",
-    "genre": "Science Fiction",
-    "name": "The Reluctant Cyborg",
-    "keywords": "Dystopian comedy,Buddy love,Evil robot,friendly robot,near future cyberpunk,sci-fi satire,post-apocalyptic,reluctant hero,surprise baby,friends to lovers,transhumanism,light-hearted comedy,Connie Willis,Jasper Fforde,John Scalzi,Douglas Adams,Terry Pratchett,working mom,war hero,Martha Wells,pop-culture references",
-    "thumbnailUrl": "../img/reluctant-cyborg-cover.jpg",
-    "offers": {
-      "@type": "Offer",
-      "availability": "PreOrder",
-      "price": "$17.99",
-      "priceCurrency": "USD"
-    },
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://emdenison.com/book/the-reluctant-cyborg"
-    }
-  }
-
-  const ebookStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "Book",
-    "isbn": "979-8990529212",
-    "numberOfPages": paperbackStructuredData.numberOfPages,
-    "bookFormat": "EBook",
-    "abstract": paperbackStructuredData.abstract,
-    "author": {
-      "@type": "Person",
-      "name": "E.M. Denison",
-      "jobTitle": "Author",
-      "url": "https://emdenison.com"
-    },
-    "copyrightYear": paperbackStructuredData.copyrightYear,
-    "datePublished": paperbackStructuredData.datePublished,
-    "genre": paperbackStructuredData.genre,
-    "name": paperbackStructuredData.name,
-    "keywords": paperbackStructuredData.keywords,
-    "thumbnailUrl": paperbackStructuredData.thumbnailUrl,
-    "offers": {
-      "@type": "Offer",
-      "asin": "B0D3YKH76X",
-      "availability": "https://schema.org/InStock",
-      "price": "$5.99",
-      "priceCurrency": "USD",
-      "seller": "Amazon",
-    },
-  }
-
-
   return (
   <>
     <Helmet>
       <title>The Reluctant Cyborg - A Novel by E.M. Denison</title>
-      <meta name="description" content={paperbackStructuredData.abstract} />
-      <meta name="keywords" content={paperbackStructuredData.keywords} />
-      <meta name="author" content={paperbackStructuredData.author.name} />      
+      <meta name="description" content={theReluctantCyborg.paperbackStructuredData.abstract} />
+      <meta name="keywords" content={theReluctantCyborg.paperbackStructuredData.keywords} />
+      <meta name="author" content={theReluctantCyborg.paperbackStructuredData.author.name} />      
 
       {/* <!-- Facebook and Twitter integration --> */}
       <meta property="og:title" content="The Reluctant Cyborg by E.M. Denison"/>
       <meta property="og:image" content="https://emdenison.com/img/social/facebook-image-the-reluctant-cyborg.png"/>
       <meta property="og:url" content="https://emdenison.com/book/the-reluctant-cyborg"/>
       <meta property="og:site_name" content="E.M. Denison - Author"/>
-      <meta property="og:description" content="A Sci-fi Dystopian Comedy"/>
+      <meta property="og:description" content={theReluctantCyborg.paperbackStructuredData.alternativeHeadline} />
       <meta name="twitter:title" content="The Reluctant Cyborg by E.M. Denison" />
       <meta name="twitter:image" content="https://emdenison.com/img/social/twitter-image-the-reluctant-cyborg.png" />
       <meta name="twitter:image:alt" content="The Reluctant Cyborg by E.M. Denison is available on Kindle, ebook, and paperback." />
       <meta name="twitter:url" content="https://emdenison.com/book/the-reluctant-cyborg" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:description" content="A Sci-fi Dystopian Comedy" />
+      <meta name="twitter:description" content={theReluctantCyborg.paperbackStructuredData.alternativeHeadline} />
 
       </Helmet>
 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(paperbackStructuredData),
+          __html: JSON.stringify(theReluctantCyborg.paperbackStructuredData),
         }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(ebookStructuredData),
+          __html: JSON.stringify(theReluctantCyborg.ebookStructuredData),
         }}
       />
 
     <Header scrollLink="#book-preview">
-      <HeaderTitle>The Reluctant Cyborg</HeaderTitle>
-      <HeaderSubTitle>By E.M. Denison</HeaderSubTitle>
+      <HeaderTitle>{theReluctantCyborg.paperbackStructuredData.name}</HeaderTitle>
+      <HeaderSubTitle>By {theReluctantCyborg.paperbackStructuredData.author.name}</HeaderSubTitle>
     </Header>
 
     <div id="book-preview" className="mt-10 mx-5">
       <BookAside imgSrc="../img/reluctant-cyborg-compound-books.png" alt="Image of Digital Native in 3d">
         <div className="grid grid-cols-2 mb-5">
           <div className="relative">
-            <BookPrice screenReader="Amazon Price" price={ebookStructuredData.offers.price} bgColor="bg-orange-400" />
-            <BookButton className="mt-6 ml-3" href="https://www.amazon.com/dp/B0D3YKH76X" color="bg-black" text="Buy an eBook" />
+            <BookPrice screenReader="Amazon Price" price={theReluctantCyborg.ebookStructuredData.offers.price} bgColor="bg-orange-400" />
+            <BookButton className="mt-6 ml-3" href={theReluctantCyborg.ebookStructuredData.offers.hasGS1DigitalLink} color="bg-black" text="Buy an eBook" />
           </div>
           <div className="relative">
-            <BookPrice screenReader="Amazon Price" price={paperbackStructuredData.offers.price} bgColor="bg-orange-400" />
-            <BookButton className="mt-6 ml-3" href="https://a.co/d/61niJFB" color="bg-black" text="Buy a Paperback" />
+            <BookPrice screenReader="Amazon Price" price={theReluctantCyborg.paperbackStructuredData.offers.price} bgColor="bg-orange-400" />
+            <BookButton className="mt-6 ml-3" href={theReluctantCyborg.paperbackStructuredData.offers.hasGS1DigitalLink} color="bg-black" text="Buy a Paperback" />
           </div>
         </div>
         {/* <div className="mb-3">
           <Stars rating={4.5} /><span className="pl-3">4.5 stars on Amazon!</span>
         </div> */}
-        <BodyCopy className="mb-1">ISBN-13 (ebook): {ebookStructuredData.isbn}</BodyCopy>
-        <BodyCopy className="mb-1">ISBN-13 (paperback): {paperbackStructuredData.isbn}</BodyCopy>
-        <BodyCopy className="mb-1">Length: {paperbackStructuredData.numberOfPages} pages</BodyCopy>
-        <BodyCopy className="mb-1">Dimensions: 6x9 inches</BodyCopy>
+        <BodyCopy className="mb-1">ISBN-13 (ebook): {theReluctantCyborg.ebookStructuredData.isbn}</BodyCopy>
+        <BodyCopy className="mb-1">ISBN-13 (paperback): {theReluctantCyborg.paperbackStructuredData.isbn}</BodyCopy>
+        <BodyCopy className="mb-1">Length: {theReluctantCyborg.paperbackStructuredData.numberOfPages} pages</BodyCopy>
+        <BodyCopy className="mb-1">Dimensions: {theReluctantCyborg.paperbackStructuredData.size}</BodyCopy>
       </BookAside>
       <div className="mt-10 md:mt-0">
         <BookH2 font="font-reluctant-cyborg-sans tracking-tight italic">About The Reluctant Cyborg</BookH2>
@@ -145,15 +84,15 @@ function TheReluctantCyborg() {
 
     <div className="mt-20 mx-5 max-w-screen-lg lg:mx-auto">
       <BookH2 font="font-reluctant-cyborg-sans tracking-tight italic">Preview of Chapter 1</BookH2>
-      <BookAside imgSrc={paperbackStructuredData.thumbnailUrl} alt="Full cover of The Reluctant Cyborg">
+      <BookAside imgSrc={theReluctantCyborg.paperbackStructuredData.thumbnailUrl} alt="Full cover of The Reluctant Cyborg">
         <div className="grid grid-cols-2 mt-5">
           <div className="relative">
-            <BookPrice screenReader="Amazon Price" price={ebookStructuredData.offers.price} bgColor="bg-orange-400" />
-            <BookButton className="mt-6 ml-3" href="https://www.amazon.com/dp/B0D3YKH76X" color="bg-black" text="Buy an eBook" />
+            <BookPrice screenReader="Amazon Price" price={theReluctantCyborg.ebookStructuredData.offers.price} bgColor="bg-orange-400" />
+            <BookButton className="mt-6 ml-3" href={theReluctantCyborg.ebookStructuredData.offers.hasGS1DigitalLink} color="bg-black" text="Buy an eBook" />
           </div>
           <div className="relative">
-            <BookPrice screenReader="Amazon Price" price={paperbackStructuredData.offers.price} bgColor="bg-orange-400" />
-            <BookButton className="mt-6 ml-3" href="https://a.co/d/61niJFB" color="bg-black" text="Buy a Paperback" />
+            <BookPrice screenReader="Amazon Price" price={theReluctantCyborg.paperbackStructuredData.offers.price} bgColor="bg-orange-400" />
+            <BookButton className="mt-6 ml-3" href={theReluctantCyborg.paperbackStructuredData.offers.hasGS1DigitalLink} color="bg-black" text="Buy a Paperback" />
           </div>
         </div>
       </BookAside>
@@ -246,7 +185,7 @@ function TheReluctantCyborg() {
       <BodyCopy><span className="italic">How am </span>I <span className="italic">going to fight in a war? </span>He was made for eating and drinking and kissing pretty girls. He was certain of that. His flesh crawled looking at the images of the dead. He didn't know if it would be worse to <span className="italic">be </span>a corpse or make someone <span className="italic">else </span>into a corpse. <span className="italic">War presents opportunities for both,</span> he realized. <span className="italic">Lovely.</span></BodyCopy>
     </div>
       <hr className="pb-3 border-black" />
-      <BodyCopy className="pb-3 italic">You may continue reading by <Link className="underline" to="https://www.amazon.com/dp/B0D3YKH76X">downloading the ebook</Link> or <Link className="underline" to="https://a.co/d/61niJFB">buying a paperback</Link> from amazon.</BodyCopy>
+      <BodyCopy className="pb-3 italic">You may continue reading by <Link className="underline" to={theReluctantCyborg.ebookStructuredData.offers.hasGS1DigitalLink}>downloading the ebook</Link> or <Link className="underline" to={theReluctantCyborg.paperbackStructuredData.offers.hasGS1DigitalLink}>buying a paperback</Link> from amazon.</BodyCopy>
       
     <Footer />
   </>)
