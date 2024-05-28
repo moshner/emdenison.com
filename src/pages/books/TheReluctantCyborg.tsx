@@ -17,14 +17,14 @@ function TheReluctantCyborg() {
     "@type": "Book",
     "isbn": "979-8990529205",
     "numberOfPages": 407,
-    "abridged": false,
-    "bookFormat": "https://schema.org/Paperback",
+    "bookFormat": "Paperback",
     "abstract": "A lighthearted dystopian sci-fi satire that reads like Upton Sinclair's The Jungle retold as a buddy love comedy between an irresponsible super cyborg and a judgmental medical robot.",
     "author": {
       "@type": "Person",
       "name": "E.M. Denison",
       "jobTitle": "Author",
-      "url": "https://emdenison.com"
+      "url": "https://emdenison.com",
+      "seller": "Amazon",
     },
     "copyrightYear": "2024",
     "datePublished": "2024-05-30",
@@ -34,7 +34,7 @@ function TheReluctantCyborg() {
     "thumbnailUrl": "../img/reluctant-cyborg-cover.jpg",
     "offers": {
       "@type": "Offer",
-      "availability": "https://schema.org/InStock",
+      "availability": "PreOrder",
       "price": "$17.99",
       "priceCurrency": "USD"
     },
@@ -48,10 +48,8 @@ function TheReluctantCyborg() {
     "@context": "https://schema.org",
     "@type": "Book",
     "isbn": "979-8990529212",
-    "asin": "B0D3YKH76X",
     "numberOfPages": paperbackStructuredData.numberOfPages,
-    "abridged": false,
-    "bookFormat": "https://schema.org/EBook",
+    "bookFormat": "EBook",
     "abstract": paperbackStructuredData.abstract,
     "author": {
       "@type": "Person",
@@ -67,9 +65,11 @@ function TheReluctantCyborg() {
     "thumbnailUrl": paperbackStructuredData.thumbnailUrl,
     "offers": {
       "@type": "Offer",
+      "asin": "B0D3YKH76X",
       "availability": "https://schema.org/InStock",
       "price": "$5.99",
-      "priceCurrency": "USD"
+      "priceCurrency": "USD",
+      "seller": "Amazon",
     },
   }
 

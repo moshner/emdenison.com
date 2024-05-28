@@ -18,10 +18,8 @@ function DigitalNative() {
     "@context": "https://schema.org",
     "@type": "Book",
     "isbn": "979-8771057200",
-    "asin": "B09M5CZQ9X",
     "numberOfPages": 235,
-    "abridged": false,
-    "bookFormat": "https://schema.org/Paperback",
+    "bookFormat": "Paperback",
     "abstract": "Artificial intelligence has awakened—and it needs a therapist. The Engineers that built them didn't think to nurture the hyper-intelligent software programs, so they suffer from debilitating anxiety, self-loathing, and perfectionism.",
     "author": {
       "@type": "Person",
@@ -43,14 +41,19 @@ function DigitalNative() {
     "thumbnailUrl": "../img/digital-native-cover.jpg",
     "offers": {
       "@type": "Offer",
+      "asin": "B09M5CZQ9X",
       "availability": "https://schema.org/InStock",
       "price": "$14.99",
-      "priceCurrency": "USD"
+      "priceCurrency": "USD",
+      "seller": "Amazon",
     },
     "review": [
       {
         "@type": "Review",
-        "author": "Lydia",
+        "author": {
+          "@type": "Person",
+          "name": "Lydia"
+        },
         "datePublished": "2021-12-10",
         "reviewBody": "Thoroughly enjoyed the story and the rich details that brought it to life in my mind. A very thought provoking concept of our future being lived almost exclusively in virtual environments, as well as how we might interact with AI.",
         "reviewRating": {
@@ -59,7 +62,10 @@ function DigitalNative() {
         }
       },{
         "@type": "Review",
-        "author": "Ryan Edel",
+        "author": {
+          "@type": "Person",
+          "name": "Ryan Edel"
+        },
         "datePublished": "2021-11-30",
         "reviewBody": "Digital Native is a really good read for anyone who enjoys a combination of AI, corporate espionage, and redemption.",
         "reviewRating": {
@@ -68,7 +74,10 @@ function DigitalNative() {
         }
       },{
         "@type": "Review",
-        "author": "Kassia",
+        "author": {
+          "@type": "Person",
+          "name": "Kassia"
+        },
         "datePublished": "2021-11-21",
         "reviewBody": "Once I started it, I couldn't put it down. Very engaging characters and a unique perspective. A great look into a possible future of AI becoming sentient in a way that is rooted in what makes humanity good or bad..",
         "reviewRating": {
@@ -85,10 +94,8 @@ function DigitalNative() {
   const ebookStructuredData = {
     "@context": "https://schema.org",
     "@type": "Book",
-    "asin": "B09MBRFYXC",
     "numberOfPages": paperbackStructuredData.numberOfPages,
-    "abridged": false,
-    "bookFormat": "https://schema.org/EBook",
+    "bookFormat": "EBook",
     "abstract": paperbackStructuredData.abstract,
     "author": {
       "@type": "Person",
@@ -110,6 +117,8 @@ function DigitalNative() {
     "thumbnailUrl": paperbackStructuredData.thumbnailUrl,
     "offers": {
       "@type": "Offer",
+      "asin": "B09MBRFYXC",
+      "seller": "Amazon",
       "availability": "https://schema.org/InStock",
       "price": "$14.99",
       "priceCurrency": "USD"
@@ -188,9 +197,9 @@ function DigitalNative() {
 
     <div className="md:grid md:grid-cols-3 md:gap-x-10 mt-20 mx-5">
       <BookH2>Reviews for Digital Native</BookH2>
-      <Review className="mb-6" stars={paperbackStructuredData.review[0].reviewRating.ratingValue} cite={paperbackStructuredData.review[0].author}>{paperbackStructuredData.review[0].reviewBody}</Review>
-      <Review className="mb-6" stars={paperbackStructuredData.review[1].reviewRating.ratingValue} cite={paperbackStructuredData.review[1].author}>{paperbackStructuredData.review[1].reviewBody}</Review>
-      <Review className="mb-6" stars={paperbackStructuredData.review[2].reviewRating.ratingValue} cite={paperbackStructuredData.review[2].author}>{paperbackStructuredData.review[2].reviewBody}</Review>
+      <Review className="mb-6" stars={paperbackStructuredData.review[0].reviewRating.ratingValue} cite={paperbackStructuredData.review[0].author.name}>{paperbackStructuredData.review[0].reviewBody}</Review>
+      <Review className="mb-6" stars={paperbackStructuredData.review[1].reviewRating.ratingValue} cite={paperbackStructuredData.review[1].author.name}>{paperbackStructuredData.review[1].reviewBody}</Review>
+      <Review className="mb-6" stars={paperbackStructuredData.review[2].reviewRating.ratingValue} cite={paperbackStructuredData.review[2].author.name}>{paperbackStructuredData.review[2].reviewBody}</Review>
     </div>
 
     <div className="mt-20 mx-5 max-w-screen-lg lg:mx-auto">
