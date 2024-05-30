@@ -24,7 +24,7 @@ const paperbackStructuredData = {
     "thumbnailUrl": "../img/reluctant-cyborg-cover.jpg",
     "offers": {
       "@type": "Offer",
-      "availability": "PreOrder",
+      "availability": "InStock",
       "price": "$17.99",
       "priceCurrency": "USD",
       "hasGS1DigitalLink": "https://a.co/d/61niJFB",
