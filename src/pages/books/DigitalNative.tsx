@@ -81,13 +81,13 @@ function book() {
       </BookAside>
       <div className="mt-10 md:mt-0">
         <BookH2>About {Book.title}</BookH2>
-        {Book.description.map(d => (<BodyCopy className="text-lg mb-5">{d}</BodyCopy>))}
+        {Book.description.map(d => (<BodyCopy key={d.id} className="text-lg mb-5 lg:w-3/5">{d.data}</BodyCopy>))}
       </div>
     </div>
 
     <div className="md:grid md:grid-cols-3 md:gap-x-10 mt-20 mx-5">
       <BookH2>Reviews for {Book.title}</BookH2>
-      {Book.reviews.map(d => (<Review className="mb-6" stars={d.reviewRating.ratingValue} cite={d.author.name}>{d.reviewBody}</Review>))}
+      {Book.reviews.map(d => (<Review key={d.id} className="mb-6" stars={d.reviewRating.ratingValue} cite={d.author.name}>{d.reviewBody}</Review>))}
     </div>
 
     <div className="mt-20 mx-5 max-w-screen-lg lg:mx-auto">
