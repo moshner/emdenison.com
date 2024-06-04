@@ -29,6 +29,32 @@ const paperbackStructuredData = {
       "priceCurrency": "USD",
       "hasGS1DigitalLink": "https://a.co/d/61niJFB",
     },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Rebekah"
+        },
+        "datePublished": "2024-05-28",
+        "reviewBody": "This is scifi that challenges like Asimov with James S A Corey pacing, Anne McCaffrey world building - and more of Denison's signature immersive style and concertina wire humour.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5
+        }
+      },{
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Nick"
+        },
+        "datePublished": "2024-05-31",
+        "reviewBody": "I loved it, as usual. E.M. Denison does a great job of keeping it light and fast paced. Her books tend to push the boundaries of sci-fi and this is no exception.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5
+        }
+      },],
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://emdenison.com/book/the-reluctant-cyborg"

@@ -10,6 +10,7 @@ import BookH2 from "../../components/BookH2";
 import { Helmet } from "react-helmet";
 import Footer from "../../components/layout/footer";
 import theReluctantCyborg from "../../components/schema/theReluctantCyborg";
+import Review from "../../components/Review";
 
 
 function TheReluctantCyborg() {
@@ -59,27 +60,47 @@ function TheReluctantCyborg() {
         <div className="grid grid-cols-2 mb-5">
           <div className="relative">
             <BookPrice screenReader="Amazon Price" price={theReluctantCyborg.ebookStructuredData.offers.price} bgColor="bg-orange-400" />
-            <BookButton className="mt-6 ml-3" href={theReluctantCyborg.ebookStructuredData.offers.hasGS1DigitalLink} color="bg-black" text="Buy an eBook" />
+            <BookButton className="mt-6 ml-3" href={theReluctantCyborg.ebookStructuredData.offers.hasGS1DigitalLink} color="bg-black" text="Amazon Kindle" />
           </div>
           <div className="relative">
             <BookPrice screenReader="Amazon Price" price={theReluctantCyborg.paperbackStructuredData.offers.price} bgColor="bg-orange-400" />
-            <BookButton className="mt-6 ml-3" href={theReluctantCyborg.paperbackStructuredData.offers.hasGS1DigitalLink} color="bg-black" text="Buy a Paperback" />
+            <BookButton className="mt-6 ml-3" href={theReluctantCyborg.paperbackStructuredData.offers.hasGS1DigitalLink} color="bg-black" text="Amazon Paperback" />
           </div>
         </div>
         {/* <div className="mb-3">
           <Stars rating={4.5} /><span className="pl-3">4.5 stars on Amazon!</span>
         </div> */}
-        <BodyCopy className="mb-1">ISBN-13 (ebook): {theReluctantCyborg.ebookStructuredData.isbn}</BodyCopy>
-        <BodyCopy className="mb-1">ISBN-13 (paperback): {theReluctantCyborg.paperbackStructuredData.isbn}</BodyCopy>
-        <BodyCopy className="mb-1">Length: {theReluctantCyborg.paperbackStructuredData.numberOfPages} pages</BodyCopy>
-        <BodyCopy className="mb-1">Dimensions: {theReluctantCyborg.paperbackStructuredData.size}</BodyCopy>
+        <h3 className="font-bold">Also available:</h3>
+          <ul className="list-disc pl-5">
+            <li>
+              <a className="underline" href="https://www.ebooks.com/en-us/book/211332248/the-reluctant-cyborg/e-m-denison/">eBooks.com</a>
+            </li>
+            <li>
+              <a className="underline" href="https://bookshop.org/p/books/the-reluctant-cyborg-e-m-denison/21453615?ean=9798990529205">Bookshop.org</a>  
+            </li>
+            <li>
+              <a className="underline" href="https://www.barnesandnoble.com/w/the-reluctant-cyborg-e-m-denison/1145623709?ean=9798990529205">Barnes & Noble</a>
+            </li>
+            <li>...and many other places</li>
+          </ul>
       </BookAside>
       <div className="mt-10 md:mt-0">
         <BookH2 font="font-reluctant-cyborg-sans tracking-tight italic">About The Reluctant Cyborg</BookH2>
         <BodyCopy className="text-lg mb-5">Year 2182: Two city states are locked in a pointless war for bragging rights between their petty, immortal dictators. Average citizens scrape by on medical betting, participating in unregulated clinical trials, or scrubbing the 'Rat Flatteners' and 'Possum Shredders' at the local meat packing plant.</BodyCopy>
         <BodyCopy className="text-lg mb-5">Trust fund goof-off Ezeny Phillips assumes his money will insulate him from this nonsense. His only worry is how his jokes are landing with a certain kitchen maid. But when the family Patriarch decides he doesn't need all his sixty heirs, he sends several dozen sons, including Ezeny, to war in exchange for lucrative social credit. Tenderhearted and unaccustomed to hardship, Ezeny proves easy pickings on the battlefield. But his wounds transform him into The Iron King, a superpowered cyborg devoid of emotion and monstrous in battle.</BodyCopy>
         <BodyCopy className="text-lg mb-5">When Medbot 5, a hyper-patriotic medical drone, accidentally frees Ezeny from the nanobots that control his thoughts, all he wants is to find his sweetheart, bond with their son, and enjoy life again. But Medbot 5 won't rest until she gets The Iron King back on the battlefield. And the judgmental robot is the least of Ezeny's problems. He must keep his past and powers secret because darker forces are hunting for him. And when the war returns to claim the Iron King, Ezeny must choose whether to save the people he loves or save his ability to love at all.</BodyCopy>
+        <h3 className="font-bold mt-3 mb-1">Details:</h3>
+        <BodyCopy className="mb-1">ISBN-13 (ebook): {theReluctantCyborg.ebookStructuredData.isbn}</BodyCopy>
+        <BodyCopy className="mb-1">ISBN-13 (paperback): {theReluctantCyborg.paperbackStructuredData.isbn}</BodyCopy>
+        <BodyCopy className="mb-1">Length: {theReluctantCyborg.paperbackStructuredData.numberOfPages} pages</BodyCopy>
+        <BodyCopy className="mb-1">Dimensions: {theReluctantCyborg.paperbackStructuredData.size}</BodyCopy>
       </div>
+    </div>
+
+    <div className="md:grid md:grid-cols-2 md:gap-x-10 mt-20 mx-5">
+      <BookH2>Reviews for The Reluctant Cyborg</BookH2>
+      <Review className="mb-6" stars={theReluctantCyborg.paperbackStructuredData.review[0].reviewRating.ratingValue} cite={theReluctantCyborg.paperbackStructuredData.review[0].author.name}>{theReluctantCyborg.paperbackStructuredData.review[0].reviewBody}</Review>
+      <Review className="mb-6" stars={theReluctantCyborg.paperbackStructuredData.review[1].reviewRating.ratingValue} cite={theReluctantCyborg.paperbackStructuredData.review[1].author.name}>{theReluctantCyborg.paperbackStructuredData.review[1].reviewBody}</Review>
     </div>
 
     <div className="mt-20 mx-5 max-w-screen-lg lg:mx-auto">
