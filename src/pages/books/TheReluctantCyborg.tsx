@@ -81,6 +81,9 @@ function TheReluctantCyborg() {
             <li>
               <a className="underline" href="https://www.barnesandnoble.com/w/the-reluctant-cyborg-e-m-denison/1145623709?ean=9798990529205">Barnes & Noble</a>
             </li>
+            <li>
+              <a className="underline" href="https://shop.ingramspark.com/b/084?lp7iEl644BEWzJGaayf1vitkTaVW3VFJ0MbgElrRFHe">IngramSpark</a>
+            </li>
             <li>...and many other places</li>
           </ul>
       </BookAside>
