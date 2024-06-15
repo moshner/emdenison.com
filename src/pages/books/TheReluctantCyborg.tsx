@@ -100,10 +100,11 @@ function TheReluctantCyborg() {
       </div>
     </div>
 
-    <div className="md:grid md:grid-cols-2 md:gap-x-10 mt-20 mx-5">
+    <div className="md:grid md:grid-cols-3 md:gap-x-10 mt-20 mx-5">
       <BookH2>Reviews for The Reluctant Cyborg</BookH2>
       <Review className="mb-6" stars={theReluctantCyborg.paperbackStructuredData.review[0].reviewRating.ratingValue} cite={theReluctantCyborg.paperbackStructuredData.review[0].author.name}>{theReluctantCyborg.paperbackStructuredData.review[0].reviewBody}</Review>
       <Review className="mb-6" stars={theReluctantCyborg.paperbackStructuredData.review[1].reviewRating.ratingValue} cite={theReluctantCyborg.paperbackStructuredData.review[1].author.name}>{theReluctantCyborg.paperbackStructuredData.review[1].reviewBody}</Review>
+      <Review className="mb-6" stars={theReluctantCyborg.paperbackStructuredData.review[1].reviewRating.ratingValue} cite={theReluctantCyborg.paperbackStructuredData.review[2].author.name}>{theReluctantCyborg.paperbackStructuredData.review[2].reviewBody}</Review>
     </div>
 
     <div className="mt-20 mx-5 max-w-screen-lg lg:mx-auto">

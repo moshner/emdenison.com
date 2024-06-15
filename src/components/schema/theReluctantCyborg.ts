@@ -4,7 +4,7 @@ const paperbackStructuredData = {
     "@type": "Book",
     "additionalType": "Product",
     "isbn": "979-8990529205",
-    "numberOfPages": 407,
+    "numberOfPages": 347,
     "size": "6x9 inches",
     "bookFormat": "Paperback",
     "name": "The Reluctant Cyborg",
@@ -46,10 +46,22 @@ const paperbackStructuredData = {
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Nick"
+          "name": "Shannon"
         },
-        "datePublished": "2024-05-31",
-        "reviewBody": "I loved it, as usual. E.M. Denison does a great job of keeping it light and fast paced. Her books tend to push the boundaries of sci-fi and this is no exception.",
+        "datePublished": "2024-06-05",
+        "reviewBody": "This book was so much fun. I know it's impossible for me to imagine that a dystopia could produce comedy, but E. M. Denison does it spectacularly.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5
+        }
+      },{
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Marie"
+        },
+        "datePublished": "2024-06-03",
+        "reviewBody": "The Reluctant Cyborg is an exciting book that grabbed my attention on page one and held it to the very end. It's well-written and features raging battles between drones and super cyborgs, but there is a warm love story at the heart of it. Very enjoyable for science fiction fans.",
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": 5
