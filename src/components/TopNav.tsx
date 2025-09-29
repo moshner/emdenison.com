@@ -35,17 +35,9 @@ const TopNav = ({ menuColor = "text-brown-50", active = "home" }: Props) => {
                                 Home
                     </Link>
                 </li>
-                <li className={`pt-6 md:pt-3 italic ${menuColor} opacity-50`}>
-                    Books:
-                </li>
-                <li className="pt-3 pl-5 md:pl-0">
-                    <Link onClick={closeMenuOnMobile} className={`${menuColor} ${active!=="reluctant-cyborg" ? "underline": active}`} to="../book/the-reluctant-cyborg">
-                        The Reluctant Cyborg
-                    </Link>
-                </li>
-                <li className="pt-3 pl-5 md:pl-0">
-                    <Link onClick={closeMenuOnMobile} className={`${menuColor} ${active!=="digital-native" ? "underline": active}`} to="../book/digital-native">
-                        Digital Native
+                <li className={`pt-6 md:pt-3 ${menuColor}`}>
+                    <Link onClick={closeMenuOnMobile} className={`${menuColor} ${active!=="Books" ? "underline": active}`} to="../Books">
+                        Books
                     </Link>
                 </li>
                 <li className="pt-6 md:hidden">
