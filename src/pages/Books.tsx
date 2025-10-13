@@ -12,6 +12,7 @@ import Footer from "../components/layout/footer";
 import authorStructuredData from "../components/schema/authorStructuredData";
 import theReluctantCyborg from "../components/schema/theReluctantCyborg";
 import digitalNative from "../components/schema/digitalNative";
+import voyager20 from "../components/schema/voyager2.0";
 
 function Books() {
   return (
@@ -52,6 +53,12 @@ function Books() {
 
     <PageSection id="books">
       <div className="grid w-4/5 m-auto md:max-w-screen-md lg:max-w-screen-lg lg:grid-cols-2 justify-center content-center align-center ">
+        <BookCard imgSrc="/img/voyager-2.0-compound-books.png">
+        <BookCardTitle>{voyager20.paperbackStructuredData.name}</BookCardTitle>
+        <BookCardText>TODO</BookCardText>
+        <BookButton text="Let's Voyage" href="/book/the-reluctant-cyborg" color="bg-black" />
+      </BookCard>
+
       <BookCard imgSrc="/img/reluctant-cyborg-compound-books.png">
         <BookCardTitle>{theReluctantCyborg.paperbackStructuredData.name}</BookCardTitle>
         <BookCardSubTitle>{theReluctantCyborg.paperbackStructuredData.alternativeHeadline}</BookCardSubTitle>
