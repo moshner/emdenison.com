@@ -9,6 +9,7 @@ const paperbackStructuredData = {
     "size": "6x9 inches",
     "bookFormat": "Paperback",
     "abstract": "Artificial intelligence has awakened—and it needs a therapist. The Engineers that built them didn't think to nurture the hyper-intelligent software programs, so they suffer from debilitating anxiety, self-loathing, and perfectionism.",
+    "description": "Artificial intelligence has awakened—and it needs a therapist",
     "author": {
       "@type": "Person",
       "name": "E.M. Denison",
@@ -27,6 +28,7 @@ const paperbackStructuredData = {
     },
     "keywords": "Sci-fi, magic, humor, artificial intelligence, robot love, buddy love,  books, novel, fiction, Post-Apocalyptic, science fiction, ebook, kindle, author, corporate intrigue",
     "thumbnailUrl": "../img/digital-native-cover.jpg",
+    "image": "../img/digital-native-compound-books.png",
     "offers": {
       "@type": "Offer",
       "asin": "B09M5CZQ9X",

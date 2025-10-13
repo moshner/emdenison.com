@@ -22,7 +22,7 @@ const paperbackStructuredData = {
     "genre": "Science Fiction",
     "keywords": "reality shifting, sci-fi romance, sci-fi comedy, sci-fi noir, cyberpunk, sci-fi adventure, dimension hopping",
     "thumbnailUrl": "../img/voyager-2.0-cover.jpg",
-    "image": "...img/voyager-2.0-compound-books.png",
+    "image": "../img/voyager-2.0-compound-books.png",
     "offers": {
       "@type": "Offer",
       "availability": "PreOrder",

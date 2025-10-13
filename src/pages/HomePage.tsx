@@ -17,7 +17,7 @@ import {Helmet} from "react-helmet";
 import Footer from "../components/layout/footer";
 import authorStructuredData from "../components/schema/authorStructuredData";
 import theReluctantCyborg from "../components/schema/theReluctantCyborg";
-import digitalNative from "../components/schema/digitalNative";
+import voyager20 from "../components/schema/voyager2.0";
 
 function HomePage() {
   return (
@@ -62,18 +62,20 @@ function HomePage() {
       </PageSectionHeaderBooks>
 
       <div className="grid w-4/5 m-auto md:max-w-screen-md lg:max-w-screen-lg lg:grid-cols-2 justify-center content-center align-center ">
-      <BookCard imgSrc="/img/reluctant-cyborg-compound-books.png">
+      <BookCard imgSrc={voyager20.paperbackStructuredData.image}>
+        <BookCardTitle>{voyager20.paperbackStructuredData.name}</BookCardTitle>
+        <BookCardText>{voyager20.paperbackStructuredData.description}</BookCardText>
+        <BookButton text="Let's Voyage" href={voyager20.paperbackStructuredData.mainEntityOfPage["@id"]} color="bg-black" />
+      </BookCard>
+
+      <BookCard imgSrc={theReluctantCyborg.paperbackStructuredData.image}>
         <BookCardTitle>{theReluctantCyborg.paperbackStructuredData.name}</BookCardTitle>
         <BookCardSubTitle>{theReluctantCyborg.paperbackStructuredData.alternativeHeadline}</BookCardSubTitle>
-        <BookCardText>A city's fate rests on its shruggiest pair of shoulders</BookCardText>
-        <BookButton text="More Cyborgs" href="/book/the-reluctant-cyborg" color="bg-orange-700" />
+        <BookCardText>{theReluctantCyborg.paperbackStructuredData.description}</BookCardText>
+        <BookButton text="More Cyborgs" href={theReluctantCyborg.paperbackStructuredData.mainEntityOfPage["@id"]} color="bg-orange-700" />
       </BookCard>
       
-      <BookCard imgSrc="/img/digital-native-compound-books.png">
-        <BookCardTitle>{digitalNative.paperbackStructuredData.name}</BookCardTitle>
-        <BookCardText>Artificial intelligence has awakened—and it needs a therapist</BookCardText>
-        <BookButton text="More AI" href="/book/digital-native" color="bg-teal" />
-      </BookCard>
+
       </div>
 
     </PageSection>

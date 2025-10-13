@@ -10,6 +10,7 @@ const paperbackStructuredData = {
     "name": "The Reluctant Cyborg",
     "alternativeHeadline": "A Sci-fi Dystopian Comedy",
     "abstract": "A lighthearted dystopian sci-fi satire that reads like Upton Sinclair's The Jungle retold as a buddy love comedy between an irresponsible super cyborg and a judgmental medical robot.",
+    "description": "A city's fate rests on its shruggiest pair of shoulders",
     "author": {
       "@type": "Person",
       "name": "E.M. Denison",
@@ -22,6 +23,7 @@ const paperbackStructuredData = {
     "genre": "Science Fiction",
     "keywords": "Dystopian comedy,Buddy love,Evil robot,friendly robot,near future cyberpunk,sci-fi satire,post-apocalyptic,reluctant hero,surprise baby,friends to lovers,transhumanism,light-hearted comedy,Connie Willis,Jasper Fforde,John Scalzi,Douglas Adams,Terry Pratchett,working mom,war hero,Martha Wells,pop-culture references",
     "thumbnailUrl": "../img/reluctant-cyborg-cover.jpg",
+    "image": "../img/reluctant-cyborg-compound-books.png",
     "offers": {
       "@type": "Offer",
       "availability": "InStock",
