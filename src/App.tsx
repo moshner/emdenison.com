@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import TheReluctantCyborg from "./pages/books/TheReluctantCyborg";
 import DigitalNative from "./pages/books/DigitalNative";
+import Voyager20 from "./pages/books/Voyager20";
 import Books from "./pages/Books";
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/book/digital-native",
     element: <DigitalNative />
+  },
+  {
+    path: "/book/voyager-2.0",
+    element: <Voyager20 />
   }
 ]);
 
