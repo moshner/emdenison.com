@@ -6,6 +6,16 @@ E.M Denison is a sci-fi and fantasy author who favors satire and stories featuri
 
 ## Books
 
+### Voyager 2.0
+
+A ship with a billion souls aboard and the only pilot is losing his mind
+$5.99 eBook
+$17.99 Paperback
+ISBN-13 (ebook): 979-8-9905292-3-6
+ISBN-13 (paperback): 979-8-9905292-2-9
+Length: 270 pages
+Dimensions: 6x9 inches
+
 ### The Reluctant Cyborg
 
 #### A Sci-fi Dystopian Comedy
