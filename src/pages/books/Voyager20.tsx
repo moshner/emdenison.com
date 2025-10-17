@@ -22,7 +22,7 @@ function Voyager20() {
       <meta name="author" content={voyager20.paperbackStructuredData.author.name} />      
 
       {/* <!-- Facebook and Twitter integration --> */}
-      <meta property="og:title" content="Voyager 2.0"/>
+      {/* <meta property="og:title" content="Voyager 2.0"/>
       <meta property="og:image" content="https://emdenison.com/img/social/facebook-image-the-reluctant-cyborg.png"/> 
       <meta property="og:url" content="https://emdenison.com/book/voyager-2.0"/>
       <meta property="og:site_name" content="E.M. Denison - Author"/>
@@ -32,7 +32,7 @@ function Voyager20() {
       <meta name="twitter:image:alt" content="Voyager 2.0 by E.M. Denison is available on Kindle, ebook, and paperback." /> 
       <meta name="twitter:url" content="https://emdenison.com/book/voyager-2.0" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:description" content={voyager20.paperbackStructuredData.description} />
+      <meta name="twitter:description" content={voyager20.paperbackStructuredData.description} /> */}
 
       </Helmet>
 
