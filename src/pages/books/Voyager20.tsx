@@ -22,17 +22,17 @@ function Voyager20() {
       <meta name="author" content={voyager20.paperbackStructuredData.author.name} />      
 
       {/* <!-- Facebook and Twitter integration --> */}
-      {/* <meta property="og:title" content="Voyager 2.0"/>
-      <meta property="og:image" content="https://emdenison.com/img/social/facebook-image-the-reluctant-cyborg.png"/> 
+      <meta property="og:title" content="Voyager 2.0"/>
+      <meta property="og:image" content="https://emdenison.com/img/social/facebook-image-voyager20.png"/> 
       <meta property="og:url" content="https://emdenison.com/book/voyager-2.0"/>
       <meta property="og:site_name" content="E.M. Denison - Author"/>
       <meta property="og:description" content={voyager20.paperbackStructuredData.description} />
       <meta name="twitter:title" content="Voyager 2.0 by E.M. Denison" />
-      <meta name="twitter:image" content="https://emdenison.com/img/social/twitter-image-the-reluctant-cyborg.png" /> 
+      <meta name="twitter:image" content="https://emdenison.com/img/social/twitter-image-voyager20.png" /> 
       <meta name="twitter:image:alt" content="Voyager 2.0 by E.M. Denison is available on Kindle, ebook, and paperback." /> 
       <meta name="twitter:url" content="https://emdenison.com/book/voyager-2.0" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:description" content={voyager20.paperbackStructuredData.description} /> */}
+      <meta name="twitter:description" content={voyager20.paperbackStructuredData.description} />
 
       </Helmet>
 
@@ -98,7 +98,7 @@ function Voyager20() {
     </div>
 
     {/* <div className="md:grid md:grid-cols-3 md:gap-x-10 mt-20 mx-5">
-      <BookH2>Reviews for The Reluctant Cyborg</BookH2>
+      <BookH2>Reviews for Voyager 2.0</BookH2>
       <Review className="mb-6" stars={voyager20.paperbackStructuredData.review[0].reviewRating.ratingValue} cite={voyager20.paperbackStructuredData.review[0].author.name}>{voyager20.paperbackStructuredData.review[0].reviewBody}</Review>
       <Review className="mb-6" stars={voyager20.paperbackStructuredData.review[1].reviewRating.ratingValue} cite={voyager20.paperbackStructuredData.review[1].author.name}>{voyager20.paperbackStructuredData.review[1].reviewBody}</Review>
       <Review className="mb-6" stars={voyager20.paperbackStructuredData.review[1].reviewRating.ratingValue} cite={voyager20.paperbackStructuredData.review[2].author.name}>{voyager20.paperbackStructuredData.review[2].reviewBody}</Review>
