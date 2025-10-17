@@ -9,7 +9,7 @@ const paperbackStructuredData = {
     "bookFormat": "Paperback",
     "name": "Voyager 2.0",
     "abstract": "In the distant future a beachball-sized spacecraft hurtles through deep space, launched from a dying Earth and populated by billions of thinking, feeling AI 'souls'—bodyless people created to traverse the stars, the digital descendants of the human race.",
-    "description": "TODO",
+    "description": "A ship with a billion souls aboard and the only pilot is losing his mind",
     "author": {
       "@type": "Person",
       "name": "E.M. Denison",
