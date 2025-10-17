@@ -69,22 +69,19 @@ function Voyager20() {
         {/* <div className="mb-3">
           <Stars rating={4.5} /><span className="pl-3">4.5 stars on Amazon!</span>
         </div> */}
-        {/* <h3 className="font-bold">Also available:</h3>
+        <h3 className="font-bold">Also available:</h3>
           <ul className="list-disc pl-5">
             <li>
-              <a className="underline" href="https://www.ebooks.com/en-us/book/211332248/the-reluctant-cyborg/e-m-denison/">eBooks.com</a>
+              <a className="underline" href="https://www.ebooks.com/en-us/book/347083101/voyager-2-0/e-m-denison/">eBooks.com</a>
             </li>
             <li>
-              <a className="underline" href="https://bookshop.org/p/books/the-reluctant-cyborg-e-m-denison/21453615?ean=9798990529205">Bookshop.org</a>  
+              <a className="underline" href="https://bookshop.org/p/books/voyager-2-0-e-m-denison/1c649c642128eba3?ean=9798990529236&next=t">Bookshop.org</a>  
             </li>
             <li>
-              <a className="underline" href="https://www.barnesandnoble.com/w/the-reluctant-cyborg-e-m-denison/1145623709?ean=9798990529205">Barnes & Noble</a>
-            </li>
-            <li>
-              <a className="underline" href="https://shop.ingramspark.com/b/084?lp7iEl644BEWzJGaayf1vitkTaVW3VFJ0MbgElrRFHe">IngramSpark</a>
+              <a className="underline" href="https://www.barnesandnoble.com/w/voyager-20-e-m-denison/1148468154?ean=9798990529229">Barnes & Noble</a>
             </li>
             <li>...and many other places</li>
-          </ul> */}
+          </ul>
       </BookAside>
       <div className="mt-10 md:mt-0">
         <BookH2 font="font-reluctant-cyborg-sans tracking-tight italic">About Voyager 2.0</BookH2>
