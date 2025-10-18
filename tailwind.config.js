@@ -28,7 +28,8 @@ export default {
         'teal': '#217F88',
         'digital-native-bg': '#182528f2',
         'digital-native-green': '#6DA09B',
-        'reluctant-cyborg-bg': '#123456'
+        'reluctant-cyborg-bg': '#123456',
+        'voyager-20-peach': '#FD9689'
       }, 
       backgroundPosition: {
         'top-1': 'center top -2rem',

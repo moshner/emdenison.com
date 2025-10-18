@@ -58,11 +58,11 @@ function Voyager20() {
       <BookAside imgSrc={voyager20.paperbackStructuredData.image} alt="Image of Voyager 2.0 ebook and paperback in 3d">
         <div className="grid grid-cols-2 mb-5">
           <div className="relative">
-            <BookPrice screenReader="Amazon Price" price={voyager20.ebookStructuredData.offers.price} bgColor="bg-orange-400" />
+            <BookPrice screenReader="Amazon Price" price={voyager20.ebookStructuredData.offers.price} bgColor="bg-voyager-20-peach" />
             <BookButton className="mt-6 ml-3" href={voyager20.ebookStructuredData.offers.hasGS1DigitalLink} color="bg-black" text="Amazon Kindle" />
           </div>
           <div className="relative">
-            <BookPrice screenReader="Amazon Price" price={voyager20.paperbackStructuredData.offers.price} bgColor="bg-orange-400" />
+            <BookPrice screenReader="Amazon Price" price={voyager20.paperbackStructuredData.offers.price} bgColor="bg-voyager-20-peach" />
             <BookButton className="mt-6 ml-3" href={voyager20.paperbackStructuredData.offers.hasGS1DigitalLink} color="bg-black" text="Amazon Paperback" />
           </div>
         </div>
@@ -109,11 +109,11 @@ function Voyager20() {
       <BookAside imgSrc={voyager20.paperbackStructuredData.thumbnailUrl} alt="Full cover of Voyager 2.0">
         <div className="grid grid-cols-2 mt-5">
           <div className="relative">
-            <BookPrice screenReader="Amazon Price" price={voyager20.ebookStructuredData.offers.price} bgColor="bg-orange-400" />
+            <BookPrice screenReader="Amazon Price" price={voyager20.ebookStructuredData.offers.price} bgColor="bg-voyager-20-peach" />
             <BookButton className="mt-6 ml-3" href={voyager20.ebookStructuredData.offers.hasGS1DigitalLink} color="bg-black" text="Buy an eBook" />
           </div>
           <div className="relative">
-            <BookPrice screenReader="Amazon Price" price={voyager20.paperbackStructuredData.offers.price} bgColor="bg-orange-400" />
+            <BookPrice screenReader="Amazon Price" price={voyager20.paperbackStructuredData.offers.price} bgColor="bg-voyager-20-peach" />
             <BookButton className="mt-6 ml-3" href={voyager20.paperbackStructuredData.offers.hasGS1DigitalLink} color="bg-black" text="Buy a Paperback" />
           </div>
         </div>
