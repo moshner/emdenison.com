@@ -15,7 +15,7 @@ const paperbackStructuredData = {
       "name": "E.M. Denison",
       "jobTitle": "Author",
       "url": "https://emdenison.com",
-      "seller": "Barnes & Noble",
+      "seller": "Amazon",
     },
     "copyrightYear": "2025",
     "datePublished": "2025-10-15",
@@ -25,10 +25,10 @@ const paperbackStructuredData = {
     "image": "../img/voyager-2.0-compound-books.png",
     "offers": {
       "@type": "Offer",
-      "availability": "PreOrder",
+      "availability": "InStock",
       "price": "$17.99",
       "priceCurrency": "USD",
-      "hasGS1DigitalLink": "https://www.barnesandnoble.com/w/voyager-20-em-denison/1148468154?ean=9798990529229",
+      "hasGS1DigitalLink": "https://a.co/d/3DN0511",
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -59,11 +59,11 @@ const paperbackStructuredData = {
     "offers": {
       "@type": "Offer",
       "asin": "B0D3YKH76X",
-      "availability": "https://schema.org/PreOrder",
+      "availability": "https://schema.org/InStock",
       "price": "$5.99",
       "priceCurrency": "USD",
-      "seller": "Barnes & Noble",
-      "hasGS1DigitalLink": "https://www.barnesandnoble.com/w/voyager-20-em-denison/1148468154?ean=9798990529236"
+      "seller": "Amazon",
+      "hasGS1DigitalLink": "https://a.co/d/5C3gf0M"
     },
   }
 
