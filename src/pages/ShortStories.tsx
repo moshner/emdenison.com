@@ -45,7 +45,7 @@ function ShortStories() {
     </Header>
 
     <PageSection id="shortStories">
-      <div className="grid w-4/5 m-auto md:max-w-screen-md lg:max-w-screen-lg lg:grid-cols-2 justify-center content-center align-center ">
+      <div className="grid m-auto md:max-w-screen-lg lg:max-w-screen-lg">
         <ShortStoryCard schemaName="totalEclipseOfTheStomach" />
       
       </div>

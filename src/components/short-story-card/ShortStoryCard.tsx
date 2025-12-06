@@ -89,16 +89,19 @@ const ShortStoryCard: React.FC<ShortStoryCardProps> = ({ schemaName }) => {
   const firstThumb = schemaData.thumbnail?.[0];
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-2 gap-2 mx-3 my-6 max-w-xl lg:grid-cols-2">
-        <img className="max-h-80" src={firstThumb.contentUrl} alt={firstThumb.caption} /> 
-        <div className="order-last">
-            <div>{schemaData.name}</div>
-            <div>Published: {schemaData.datePublished}</div>
-            <div>{schemaData.abstract}</div>
-            <div>{schemaData.genre} | {schemaData.keywords}</div>
-            <div>{schemaData.rating || "No ratings yet"}</div>
-            <div>{firstOffer.price} ({firstOffer.acceptedPaymentMethod})</div>
-            <div><a href={firstOffer.hasGS1DigitalLink}>Buy Now</a></div>
+    <div className="grid mx-5 w-4/5 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <a className="place-self-center md:place-self-start" href={firstOffer.hasGS1DigitalLink}><img className="max-h-80" src={firstThumb.contentUrl} alt={firstThumb.caption} /></a>
+        <div className="col-span-1 md:col-span-3 order-last">
+            <h2 className='font-sans-serif text-2xl pb-4 md:text-3xl font-normal text-brown-900'>{schemaData.name}</h2>
+            <p className='font-sans-serif text-lg md:text-xl pb-4'>{schemaData.abstract}</p>
+            <div className='font-sans-serif text-base pb-4'>{schemaData.rating || "No ratings yet"}</div>
+            <ul className='font-sans-serif text-sm pb-4'>
+                <li><strong>Published:</strong> {schemaData.datePublished}</li>
+                <li><strong>Genre:</strong> {schemaData.genre}</li>
+                <li><strong>Keywords:</strong> {schemaData.keywords}</li>
+            </ul>
+            <div>List price: {firstOffer.price} ({firstOffer.acceptedPaymentMethod})</div>
+            <a className='cursor-pointer inline-block font-bold mt-4 py-2 px-6 rounded-full bg-black hover:underline text-white' href={firstOffer.hasGS1DigitalLink}>Buy Now</a>
         </div>
     </div>
   );
