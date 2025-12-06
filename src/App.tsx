@@ -7,6 +7,7 @@ import TheReluctantCyborg from "./pages/books/TheReluctantCyborg";
 import DigitalNative from "./pages/books/DigitalNative";
 import Voyager20 from "./pages/books/Voyager20";
 import Books from "./pages/Books";
+import ShortStories from "./pages/ShortStories";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/books",
     element: <Books />
+  },
+  {
+    path: "/short-stories",
+    element: <ShortStories />
   },
   {
     path: "/book/the-reluctant-cyborg",

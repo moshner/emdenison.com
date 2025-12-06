@@ -36,8 +36,14 @@ const TopNav = ({ menuColor = "text-brown-50", active = "home" }: Props) => {
                     </Link>
                 </li>
                 <li className={`pt-6 md:pt-3 ${menuColor}`}>
-                    <Link onClick={closeMenuOnMobile} className={`${menuColor} ${active!=="Books" ? "underline": active}`} to="../Books">
+                    <Link onClick={closeMenuOnMobile} className={`${menuColor} ${active!=="Books" ? "underline": active} pr-3`} to="../Books">
                         Books
+                    </Link>
+                </li>
+                <li className={`pt-6 md:pt-3 ${menuColor}`}>
+                    <Link onClick={closeMenuOnMobile} 
+                            className={`${active!=="Short-Stories" ? "underline": active} pr-3`} to="../Short-Stories">
+                                Short Stories
                     </Link>
                 </li>
                 <li className="pt-6 md:hidden">
