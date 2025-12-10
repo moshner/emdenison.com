@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HeaderTitle from "../components/layout/header/HeaderTitle";
 import HeaderSubTitle from "../components/layout/header/HeaderSubTitle";
 import Header from "../components/layout/header/Header";
@@ -18,6 +19,7 @@ import Footer from "../components/layout/footer";
 import authorStructuredData from "../components/schema/authorStructuredData";
 import theReluctantCyborg from "../components/schema/theReluctantCyborg";
 import voyager20 from "../components/schema/voyager2.0";
+import ShortStoryCard from "../components/short-story-card/ShortStoryCard";
 
 function HomePage() {
   return (
@@ -75,9 +77,16 @@ function HomePage() {
         <BookButton text="More Cyborgs" href={theReluctantCyborg.paperbackStructuredData.mainEntityOfPage["@id"]} color="bg-orange-700" />
       </BookCard>
       
-
+        <Link className="col-span-2 text-center cursor-pointer inline-block font-bold mt-4 py-2 px-6 rounded-full bg-orange-950 hover:underline text-white w-auto" to="../Books">All Books</Link>
       </div>
 
+    </PageSection>
+
+    <PageSection id="shortStories">
+      <PageSectionHeaderBooks bgImg="bg-hero-3">
+        <SectionTitleBooks>Newest Short Stories</SectionTitleBooks>
+      </PageSectionHeaderBooks>
+      <ShortStoryCard schemaName="totalEclipseOfTheStomach" />
     </PageSection>
 
     <div className="grid grid-cols-1 md:grid-cols-2">
