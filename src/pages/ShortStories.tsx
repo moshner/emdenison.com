@@ -45,9 +45,9 @@ function ShortStories() {
     </Header>
 
     <PageSection id="shortStories">
-      <div className="grid m-auto md:max-w-screen-lg lg:max-w-screen-lg">
+      <div className="grid m-auto md:max-w-screen-lg gap-8 lg:max-w-screen-lg">
+        <ShortStoryCard schemaName="honorAmongThieves" />
         <ShortStoryCard schemaName="totalEclipseOfTheStomach" />
-      
       </div>
 
     </PageSection>
