@@ -47,7 +47,7 @@ const TopNav = ({ menuColor = "text-brown-50", active = "home" }: Props) => {
                     </Link>
                 </li>
                 <li className="pt-6 md:hidden">
-                    <ButtonOutline href="#newsletter" text="Join Newsletter" textColor="text-white" borderColor="br-white" />
+                    <ButtonOutline href="https://emdenison.us11.list-manage.com/subscribe?u=12b962f2de11d672395103e1e&id=5cfc518044" text="Join Newsletter" textColor="text-white" borderColor="br-white" />
                 </li>
             </ul>
             <div className="flex items-center md:hidden">
